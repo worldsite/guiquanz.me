@@ -1,22 +1,22 @@
 ---
 layout: post
-title: 打印Lua提供的所有全局变量
+title: 遍历Lua全局环境变量
 category: lua
 ---
-h2. Lua的全局变量
+h2. Lua全局变量
 
-Lua解释器提供了很多全局变量，比如print等，便于程序开发。Lua提供的所有全局变量都保存在一个普通的表_G中。目前Lua-5.2.1中_G中的全局变量仅有“字符串”、“函数”及“表”三种。那该如何打印这些值呢？（当然，你在会话中进行的任何变更，都将对其造成影响）
+Lua解释器提供了很多全局变量，比如print等，便于程序开发。Lua提供的所有全局变量都保存在一个普通的表_G中。目前Lua-5.2.1中_G中的全局变量主要有“字符串”、“函数”及“表”三种。那该如何遍历这些值呢？（当然，你在会话中进行的任何变更，都将对其造成影响，除非有local限定）
 
-h2. 如何打印Lua提供的所有全局变量？
+h2. 如何遍历Lua提供的全局变量？
 
-既然_G是一个普通的表，那么我们可以采用for语句进行简单的遍历即可。具体代码，如下：
+既然_G是一个普通的表，那么我们可以采用for语句对其进行简单的遍历即可。具体代码，如下：
 
 pre. 
 for k,v in pairs(_G) do 
   print(string.format("%s => %s\n",k,v))
 end
 
-当然，为了打印所有的全局变量（比如，io库支持的所有函数等），我们需要对所有table类变量进行遍历（由于_G._G与_G等效，所以代码中进行了过滤，不重复打印。并且，此实现仅遍历了2层）。具体代码，如下：
+当然，为了遍历所有的全局变量（比如，io库支持的所有函数等），我们需要对所有table类变量进行遍历（由于_G._G与_G等效，所以以下的代码中对其进行了过滤，不重复遍历。并且，此实现仅遍历了2层）。具体代码，如下：
 
 pre. 
 for k,v in pairs(_G) do 
@@ -62,7 +62,7 @@ _G.math => table: 0x10dd460
 >
 
 
-如果只想打印os库提供的函数列表，可以按以下的方式处理：
+如果只想遍历os库提供的函数列表，可以按以下的方式处理：
 
 pre. 
 > for k,v in pairs(_G.os) do print(k) end 
@@ -78,7 +78,7 @@ setlocale
 rename
 execute
 
-h2. 基于递归实现的版本
+h2. 比较优雅的实现：基于递归的版本
 
 以下是一个基于递归的实现版本（为什么会对package进行特殊处理呢？（提示：死循环，可进一步优化处理））：
 
@@ -96,7 +96,7 @@ function re_print(t,prefix)
   end
 end
 
-代码的运行结果，如下：
+最终运行结果，如下：
 
 pre.  
 > function re_print(t,prefix)
@@ -189,7 +189,7 @@ _G.package
 ?
 !
 -
---此处是空行
+--此处是空行（此处原始内容为'\n'。此标注，仅用于防止jekyll解析textile语法出错）
   _G.package.cpath => /usr/local/lib/lua/5.2/?.so;/usr/local/lib/lua/5.2/loadall.so;./?.so
   _G.package.searchers
     _G.package.searchers.1

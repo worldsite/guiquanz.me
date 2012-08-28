@@ -35,7 +35,7 @@ i@home> sodu yum install scons cmake
 pre. 
 i@home> sudo yum install flex bison lemon
 
-6.安装数据库： mysql
+6.安装数据库及开发包： mysql
 
 pre. 
 i@home> sudo yum install mysql mysql-server mysql-devel 
@@ -66,7 +66,7 @@ i@home> sudo yum install ibus ibus-sunpinyin
 pre. 
 i@home> sudo yum install p7zip p7zip-plugins unrar
 
-11.安装音/视频解码器及播放工具
+11.安装音/视频播放器及解码包
 
 pre. 
 i@home> sudo rpm -ivh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
@@ -82,6 +82,8 @@ i@home> sudo yum groupinstall office/productivity
 i@home> sudo yum install openoffic.org-langpack-zh_CN #如果安装时，桌面已是中文了，那不用执行此操作
 
 13.安装浏览器：Chrome
+（1）到官网下载Linux平台安装包
+（2）安装chrome
 
 pre. 
 i@home> sodu yum install pax* redhat-lsb*
@@ -92,5 +94,4 @@ error: Failed dependencies:
 i@home> sodu yum sudo rpm -ivh google-chrome-stable_current_x86_64.rpm
 
 ----
-
 

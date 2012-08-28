@@ -5,9 +5,9 @@ msg=
 
 usage:
 	@echo "  Usage:                                    "
-	@echo "      1. make [-f Makefile] build           "
+	@echo "      1. make test                          "
 	@echo "      2. make commit msg='comments'         "
-	@echo "      3. make remote-commit msg='comments'  "
+	@echo "      3. make remote-commit                 "
 	@echo "                                            "
 
 build:
@@ -24,14 +24,9 @@ remote-commit: clean
 .PHONY: clean test
 
 clean: 
-	rm -rf ./*.bak ./*~ ./*/*.bak ./*/*~ ./_site/*
+	rm -rf ./*.bak ./*~ ./*/*.bak ./*/*~ ./_site ./*/*/*.bak ./*/*/*~
 
 test: clean build
 	@echo "Ok\n"
-
-
-
-
-
 
 
