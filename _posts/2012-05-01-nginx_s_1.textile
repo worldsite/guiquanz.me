@@ -1,0 +1,220 @@
+---
+layout: post
+title: nginx源码编译管理方案解析
+category: nginx
+---
+
+作者： GuiQuanZ
+
+h2. 引子
+
+    nginx是一块高性能的HTTP服务器，由俄罗斯著名黑客Igor Sysoev开发，并在GPL协议下开放。由于在性能等方面的卓越表现，被广泛应用于各大商业网站运维中。可以通过浏览 "官网":http://nginx.net ，获取更多相关信息。
+
+    nginx属于一个中等规模的C项目,目前最新版本nginx-1.2.0，代码不超过10万行。ngnix的构架非常灵巧，与apache及lighttpd有很大的不同。后续我会分专题介绍nginx的方方面面。本次，我们仅关心其源码编译方式。实际上，这也是一个复杂的工程，将通过一系列的文章进行分析、总结。
+
+    现在，让我们言归正传吧。
+
+[备注]: 本文研究的对象是nginx-1.2.0版本。
+
+h2. 源码编译管理那些事
+
+    源码编译管理是，中、大型项目开发、部署中不得不面对的问题。当一个工程只有几百行代码，仅分布于一个或几个很少的文件时，可以用非常简单的操作命令来维护。但是，当代码规模较大，且又不得不考虑可移植性带来的复杂性时，我们就需要特殊的方式来管理和维护整个项目编译。
+    目前，主流的C/C++工程代码编译管理方式有，
+
+bq. 
+    （1）. 编写Makefle文件，用make工具进行编译管理；
+    （2）. 利用automake、autoconf、autoheader及libtool等工具生成configure文件，来管里软件编译流程；
+    （3）. 通过Makefile及shell脚本管理；
+    （4）. 采用cmake进行管理；
+    （5）. 如果熟悉python编程，可以采用setup.py的方式管理；
+    （6）. 如果还熟悉tcl语言，可以用autosetup工具管理；
+    （7）. 采用scons进行编译管理；
+    （8）. 还有，我们将要解析的nginx源码编译管理方式；
+    （9）. 其他
+
+    其中，（1）是最简单，最通用的方式,例如leveldb等。（2）是多数开源C/C++项目采用的方式，例如libev等。（3）是一些目录结构非常复杂的项目，为了简化流程而采用的方案。（4）至（6）是最近几年才广泛使用的方式。C/C++源码编译管理方式很多，也许你手中的项目采用的就是不同的方式。nginx采用的方式的效果，类似于（2），但那是Igor Sysoev开发的工具。不需要编写makefile.am、configure.ac等配置文件，不使用auto*工具链。其实现方式很清晰巧妙，生成的Makefile文件也一样简洁、明了（不像（2）那样复杂，那是给非人类看的）。
+
+h2. nginx的编译工具
+
+    nginx的编译工具，由根目录的configure及auto目录下的文件构成。下面，我们将从configure入手，分解nginx编译方式的实现：
+
+h2. 编译流程分析：configure文件
+
+    configure是nginx编译的提纲文件，其中包括了整个编译管理流程，也就是生成Makefile的流程。这是一个shell脚本文件。其主要操作内容，如下：
+
+bq. 
+    （1）. configure脚本自身执行参数及全局变量处理
+
+pre. 
+. auto/options
+
+bq. 
+     （2）. 初始化生成$NGX_OBJS目录下Makefile等文件相关的环境变量，最后生成根目录的Makefile文件。其中，NGX_OBJS是（1）操作中生成的变量，默认值为objs
+
+pre. 
+. auto/init
+
+bq. 
+    （3）. 编译相关的模块、头文件、源代码文件列表初始化。同时，定义了各类文件的依赖关系。
+
+pre. 
+. auto/sources
+
+bq. 
+    （4）. 判断“$NGX_OBJS”目录（objs）是否存在。如果没有，生成一个。
+
+pre. 
+test -d $NGX_OBJS || mkdir $NGX_OBJS
+
+
+bq. 
+    （5）. 根据（2）中定义的NGX_AUTO_HEADERS_H和NGX_AUTO_CONFIG_H变量值，生成$NGX_OBJS/ngx_auto_headers.h和$NGX_OBJS/ngx_auto_config.h文件
+
+pre. 
+echo > $NGX_AUTO_HEADERS_H
+echo > $NGX_AUTOCONF_ERR
+
+
+bq. 
+    （6）. 定义NGX_CONFIGURE宏，并将其值写到$NGX_OBJS/ngx_auto_config.h文件
+
+pre. 
+echo "#define NGX_CONFIGURE \"$NGX_CONFIGURE\"" > $NGX_AUTO_CONFIG_H
+
+bq. 
+    （7）. 如果$NGX_DEBUG值为YES，打开NGX_DEBUG编译开关（打开调试模式）
+
+pre. 
+if [ $NGX_DEBUG = YES ]; then
+    have=NGX_DEBUG . auto/have
+fi
+
+bq. 
+    （8）. 打印平台NGX_PLATFORM信息。如果找不到当前环境对应的系统平台，则打印出'uname -s'、'uname -r'和'uname -m'的值，并判断是否为win32系统环境。如果找到对应系统平台，将具体的平台信息打印处理。
+
+pre. 
+if test -z "$NGX_PLATFORM"; then
+    echo "checking for OS"
+    NGX_SYSTEM=`uname -s 2>/dev/null`
+    NGX_RELEASE=`uname -r 2>/dev/null`
+    NGX_MACHINE=`uname -m 2>/dev/null`
+    echo " + $NGX_SYSTEM $NGX_RELEASE $NGX_MACHINE"
+    NGX_PLATFORM="$NGX_SYSTEM:$NGX_RELEASE:$NGX_MACHINE";
+    case "$NGX_SYSTEM" in
+        MINGW32_*)
+            NGX_PLATFORM=win32
+        ;;
+    esac
+else
+    echo "building for $NGX_PLATFORM"
+    NGX_SYSTEM=$NGX_PLATFORM
+fi
+
+bq. 
+    （9）. 配置编译器相关变量。包括，选择当前平台对应的编译器，并定义相关的编译参数。并针对*nix平台，进行特殊头文件处理，执行“. auto/headers”操作
+
+pre. 
+. auto/cc/conf
+if [ "$NGX_PLATFORM" != win32 ]; then
+    . auto/headers
+fi
+
+bq. 
+    （10）. 配置操作系统OS相关变量值，针对*nix平台执行“. auto/unix”特殊操作
+
+pre. 
+. auto/os/conf
+if [ "$NGX_PLATFORM" != win32 ]; then
+    . auto/unix
+fi
+
+bq. 
+    （11）. 完成modules相关的变量配置
+
+pre. 
+. auto/modules
+
+bq. 
+    （12）. 完成nginx编译依赖的库配置
+
+pre. 
+. auto/lib/conf
+
+bq. 
+    （13）. nginx可执行文件安装目录配置处理
+
+pre. 
+case ".$NGX_PREFIX" in
+    .)
+        NGX_PREFIX=${NGX_PREFIX:-/usr/local/nginx}
+        have=NGX_PREFIX value="\"$NGX_PREFIX/\"" . auto/define
+    ;;
+    .!)
+        NGX_PREFIX=
+    ;;
+    *)
+        have=NGX_PREFIX value="\"$NGX_PREFIX/\"" . auto/define
+    ;;
+esac
+
+bq. 
+    （14）. nginx启动配置文件安装目录配置处理
+
+pre. 
+if [ ".$NGX_CONF_PREFIX" != "." ]; then
+    have=NGX_CONF_PREFIX value="\"$NGX_CONF_PREFIX/\"" . auto/define
+fi
+
+bq. 
+    （15）. 其他文件安装目录配置处理
+
+pre. 
+have=NGX_SBIN_PATH value="\"$NGX_SBIN_PATH\"" . auto/define
+have=NGX_CONF_PATH value="\"$NGX_CONF_PATH\"" . auto/define
+have=NGX_PID_PATH value="\"$NGX_PID_PATH\"" . auto/define
+have=NGX_LOCK_PATH value="\"$NGX_LOCK_PATH\"" . auto/define
+have=NGX_ERROR_LOG_PATH value="\"$NGX_ERROR_LOG_PATH\"" . auto/define
+#HTTP日志目录、客户端临时目录，代理临时目录，FASTCGI临时目录、UWSGI临时目录及SCGI临时目录处理
+have=NGX_HTTP_LOG_PATH value="\"$NGX_HTTP_LOG_PATH\"" . auto/define
+have=NGX_HTTP_CLIENT_TEMP_PATH value="\"$NGX_HTTP_CLIENT_TEMP_PATH\""
+. auto/define
+have=NGX_HTTP_PROXY_TEMP_PATH value="\"$NGX_HTTP_PROXY_TEMP_PATH\""
+. auto/define
+have=NGX_HTTP_FASTCGI_TEMP_PATH value="\"$NGX_HTTP_FASTCGI_TEMP_PATH\""
+. auto/define
+have=NGX_HTTP_UWSGI_TEMP_PATH value="\"$NGX_HTTP_UWSGI_TEMP_PATH\""
+. auto/define
+have=NGX_HTTP_SCGI_TEMP_PATH value="\"$NGX_HTTP_SCGI_TEMP_PATH\""
+. auto/define
+
+bq. 
+    （16）. nginx可执行文件，库make及install操作处理
+
+pre. 
+. auto/make
+. auto/lib/make
+. auto/install
+
+bq. 
+    （17）. 替换操作处理
+
+pre. 
+# STUB
+. auto/stubs
+
+bq. 
+    （18）. nginx启动用户及组身份定义
+
+pre. 
+have=NGX_USER value="\"$NGX_USER\"" . auto/define
+have=NGX_GROUP value="\"$NGX_GROUP\"" . auto/define
+
+bq. 
+    （19）. 打印configure脚本执行汇总信息
+
+pre. 
+. auto/summary
+
+----
+
+

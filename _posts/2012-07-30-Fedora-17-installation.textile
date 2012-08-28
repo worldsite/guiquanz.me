@@ -1,0 +1,96 @@
+---
+layout: post
+title: Fedora 17安装开发、办公软件
+category: fedora
+---
+
+h2. 缘由
+
+    最近从ubuntu 11.10迁移到了Fedora平台。安装的是最新的Fedora 17版本（x86_64），用户体验还不错。以下是开发、办公等相关软件，命令行安装汇总，希望对初级用户有帮助。具体，如下：
+
+[备注]: 本文仅适用于Fedora环境。
+
+1.安装编辑器：vim
+
+pre. 
+i@home> sudo yum install vim
+
+2.安装c/c++等编译工具：gcc/g++/erl/R
+
+pre. 
+i@home> sudo yum install gcc gcc-c++ erl R 
+
+3.安装c/c++帮助手册
+
+pre. 
+i@home> sudo yum install man-pages libstdc++-docs
+
+4.安装软件编译工具：scons/cmake
+
+pre. 
+i@home> sodu yum install scons cmake
+
+5.安装词法/语法解析工具：flex/lemon/bison
+
+pre. 
+i@home> sudo yum install flex bison lemon
+
+6.安装数据库： mysql
+
+pre. 
+i@home> sudo yum install mysql mysql-server mysql-devel 
+
+7.安装版本控制工具：git/svn
+
+pre. 
+i@home> sudo yum install git-core svn
+
+8.安装Rails开发环境：ruby/rails
+
+pre. 
+i@home> sudo yum install ruby ruby-devdel
+i@home> sudo gem sources -a http://gems.github.com
+否则，会报错：
+ERROR:  While executing gem ... (Zlib::GzipFile::Error)
+    not in gzip format 
+i@home> sudo gem update
+i@home> sodu gem install rails
+
+9.安装输入法：sunpinyin
+
+pre. 
+i@home> sudo yum install ibus ibus-sunpinyin
+
+10.安装特殊压缩工具：7zip/Rar
+
+pre. 
+i@home> sudo yum install p7zip p7zip-plugins unrar
+
+11.安装音/视频解码器及播放工具
+
+pre. 
+i@home> sudo rpm -ivh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+i@home> sudo yum makecache
+i@home> sudo yum install ffmpeg ffmpeg-libs gstreamer-ffmpeg xvidcore libdvdread libdvdnav 
+i@home> sudo yum install lsdvd gstreamer-plugins-good gstreamer-plugins-bad gstreamer-plugins-ugly
+i@home> sudo yum install audacious-plugins-freeworld-mp3
+
+12.安装办公软件：OpenOffice
+
+pre. 
+i@home> sudo yum groupinstall office/productivity
+i@home> sudo yum install openoffic.org-langpack-zh_CN #如果安装时，桌面已是中文了，那不用执行此操作
+
+13.安装浏览器：Chrome
+
+pre. 
+i@home> sodu yum install pax* redhat-lsb*
+否则，会报错：
+warning: google-chrome-stable_current_x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 7fac5991: NOKEY
+error: Failed dependencies:
+	lsb >= 4.0 is needed by google-chrome-stable-20.0.1132.57-145807.x86_64
+i@home> sodu yum sudo rpm -ivh google-chrome-stable_current_x86_64.rpm
+
+----
+
+

@@ -1,0 +1,77 @@
+---
+layout: post
+title: Rails开发环境安装
+category: rails
+---
+
+h2. 缘起
+
+    好久没动Rails了，打算重新安装开发环境。安装 "ruby":http://www.ruby-lang.org/en 1.9.3和 "Rails": http://rubyonrails.org 3.2.6。平台环境为: Ubuntu 11.10 x86_64。
+
+[备注]: 本文仅适用于Ubuntu环境。
+
+0、创建工作目录
+
+pre. 
+i@home> mkdir -p ~/ruby && cd ~/ruby
+
+1、安装yaml库
+
+pre. 
+i@home> wget http://pyyaml.org/download/libyaml/yaml-0.1.4.tar.gz
+i@home> tar xzvf yaml-0.1.4.tar.gz
+i@home> cd yaml-0.1.4
+i@home> ./configure --prefix=/usr/local
+i@home> make
+i@home> sudo make install
+
+---apt-get方式安装ibyaml
+
+pre. 
+i@home> sudo apt-get install build-essential bison
+i@home> sudo apt-get install libyaml-dev
+
+2、安装ruby-1.9.3
+
+pre. 
+i@home> wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p194.tar.gz
+i@home> tar xzvf ruby-1.9.3-p194.tar.gz
+i@home> cd ruby-1.9.3-p194
+i@home> ./configure --prefix=/opt/ruby-1.9.3-p194 --enable-shared --disable-install-doc --with-opt-dir=/usr/local/lib
+i@home> make
+i@home> sudo make install
+
+3、更新gem
+
+pre. 
+i@home> sudo gem update --system
+i@home> sudo gem update
+
+4、安装rails
+
+pre. 
+i@home> sudo gem install rails
+
+5、创建一个rails项目，使用mysql数据库
+
+pre. 
+i@home> rails new hentaier --database=mysql
+
+6、启动web服务
+
+pre. 
+i@home> cd hentaier && rails server
+
+7、察看结果
+ 浏览 http://localhost:3000 ，结果如下：
+<section id="lightboxthumbs">
+<a href="/images/article/nosql/rails-hw.png" rel="lightbox" title="Rails"><img src="/images/article/nosql/rails-hw.png" alt="运行结果" class="frameit" width="400px" height="240px"></a>
+</section>
+
+----
+
+
+
+
+
+

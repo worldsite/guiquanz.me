@@ -1,12 +1,7 @@
-<!doctype html>
-<html>
-<head>
-<title> guiquanz </title>
-</head>
-
-<body>
-<h1> Hello </h1>
-</body>
-
-</html>
+---
+layout: default
+---
+{% assign page = site.posts.first %}
+{% assign content = page.content %}
+{% include post.html %}
 
