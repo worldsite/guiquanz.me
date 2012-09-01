@@ -61,7 +61,7 @@ overflow: hidden;
   clear: both;
   margin: 0 auto;
   width: 1020px;
-  height: 20px;
+  height: 40px;
   font-size: 1.1em;
   padding: 0.5em 0;
   text-align: center;
@@ -90,6 +90,7 @@ font-weight: bold;
 clear: both;
 color: #333;
 padding-top: 5px;
+margin-bottom: 8px;
 }
 
 h1 a, h2 a, h3 a {
@@ -279,7 +280,6 @@ color: #000;
 aside section {
 margin: 10px 0 0 0;
 padding: 10px 10px;
-/* background-color: #F5E9DF; */
 background-color: #00FF7F;
 
 /* curved border radius */
