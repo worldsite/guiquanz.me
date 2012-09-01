@@ -11,10 +11,11 @@ a {
 }
 
 a:link:after, a:visited:after {
+/* content: " (" attr(href) ") "; */
 font-size: 70%;
 }
 
-nav, sidebar, footer, header, aside { 
+nav, sidebar, footer, header, aside, bdshare_js { 
   display : none; 
 }
 
