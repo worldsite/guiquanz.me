@@ -15,7 +15,7 @@ a:link:after, a:visited:after {
 font-size: 70%;
 }
 
-nav, sidebar, footer, header, aside, bdshare_js { 
+nav, sidebar, footer, header, aside, bdshare_js, disqus_thread { 
   display : none; 
 }
 
