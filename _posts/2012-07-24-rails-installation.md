@@ -9,16 +9,16 @@ tags:
 ---
 ## 缘起
 
-好久没动Rails了，打算重新搭建开发环境。安装[ruby](http://www.ruby-lang.org/en)1.9.3和[Rails](http://rubyonrails.org)3.2.6。平台环境为: Ubuntu 11.10 x86_64。
+好久没动*Rails*了，打算重新搭建开发环境。安装[ruby](http://www.ruby-lang.org/en)1.9.3和[Rails](http://rubyonrails.org)3.2.6。平台环境为: Ubuntu 11.10 x86_64。
 
-备注: `本文仅适用于Ubuntu环境`。
+备注: *本文仅适用于`Ubuntu`环境*。
 
-0、创建工作目录
+__0、创建工作目录__
 <pre class="prettyprint linenums">
 mkdir -p ~/ruby && cd ~/ruby
 </pre>
 
-1、安装yaml库
+__1、安装yaml库__
 <pre class="prettyprint linenums">
 wget http://pyyaml.org/download/libyaml/yaml-0.1.4.tar.gz
 tar xzvf yaml-0.1.4.tar.gz
@@ -28,13 +28,13 @@ make
 sudo make install
 </pre>
 
-采用apt-get工具安装libyaml
+*采用apt-get工具安装libyaml*
 <pre class="prettyprint linenums">
 sudo apt-get install build-essential bison
 sudo apt-get install libyaml-dev
 </pre>
 
-2、安装ruby-1.9.3
+__2、安装ruby-1.9.3__
 <pre class="prettyprint linenums">
 wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p194.tar.gz
 tar xzvf ruby-1.9.3-p194.tar.gz
@@ -44,35 +44,36 @@ make
 sudo make install
 </pre>
 
-3、更新gem 
+__3、更新gem__
 <pre class="prettyprint linenums">
 sudo gem update --system
 sudo gem update
 </pre>
 
-4、安装rails
+__4、安装rails__
 <pre class="prettyprint linenums">
 sudo gem install rails
 </pre>
 
-5、安装MySQL
+__5、安装MySQL__
 <pre class="prettyprint linenums">
 sudo apt-get install mysql mysql-server 
 </pre>
 
-6、创建一个rails项目，使用mysql数据库
+__6、创建一个rails项目，使用mysql数据库__
 <pre class="prettyprint linenums">
-rails new hentaier --database=mysql
+rails new mysite --database=mysql
 </pre>
 
-7、启动web服务
+__7、启动web服务__
 <pre class="prettyprint linenums">
-cd hentaier && rails server
+cd mysite && rails server
 </pre>
 
-8、察看结果
+__8、察看结果__
+
  浏览 http://localhost:3000 ，正常显示如下结果：
-<section id="lightboxthumbs">
-<a href="/images/article/rails-hw.png" rel="lightbox" title="Rails"><img src="/images/article/rails-hw.png" alt="运行结果" class="frameit" width="400px" height="240px"></a>
-</section>
+<a href="/img/article/rails-hw.png" rel="lightbox"><img src="/img/article/rails-hw.png" alt="运行结果" class="frameit" width="400px" height="240px"></a>
+
+
 

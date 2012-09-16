@@ -1,0 +1,48 @@
+---
+layout: post
+title: 14条高性能Web设计原则
+date: 2012-09-15
+categories:
+    - 经验
+tags:
+    - web
+    - 设计
+---
+## 缘由
+
+最近在着手做一些有趣的产品，顺便把曾经熟悉的web前端开发相关技术捡回来（这几年一直都在从事移动通信后端的大型系统开发及维护）。大家都希望做一流的，高性能的网站，除了后端高可靠、高性能的架构支撑，前端的优化也是必不可少的。以下分享源于Yahoo工程师`Steve Souders`和`Nate Koechley`所著《`High Performance Web Sites`》一书中提到的14条性能方面的设计原则，希望大家以此共勉，并不断创新。虽然是2007年出版的书，但这些原则放在当下依然有非常高的价值。
+![High Perforrmance Web Sites](/img/book_covers/high_performance_web_sites.png)
+
+## 14条高性能Web设计原则
+
+> Rule <span class="badge badge-info">1</span>: Make Fewer HTTP Requests
+
+> Rule <span class="badge badge-info">2</span>: Use a Content Delivery Network
+
+> Rule <span class="badge badge-info">3</span>: Add a Expores Header
+
+> Rule <span class="badge badge-info">4</span>: Gzip Components
+
+> Rule <span class="badge badge-info">5</span>: Put Stylesheets at the Top
+
+> Rule <span class="badge badge-info">6</span>: Put Scripts at the Bottom
+
+> Rule <span class="badge badge-info">7</span>: Avoid CSS Expressions
+
+> Rule <span class="badge badge-info">8</span>: Make JavaScript add Css External
+
+> Rule <span class="badge badge-info">9</span>: Reduce DNS Lookups
+
+> Rule <span class="badge badge-info">10</span>: Minify JavaScript
+
+> Rule <span class="badge badge-info">11</span>: Avoid Redirects
+
+> Rule <span class="badge badge-info">12</span>: Remove Duplicate Scripts
+
+> Rule <span class="badge badge-info">13</span>: Configure Etags
+
+> Rule <span class="badge badge-info">14</span>: Make Ajax Cacheable
+
+这些都是很容易就能达成的设计要求。如果你的产品还是逻辑与表现混杂等等，建议你尽快尝试一下，定有很多惊喜哦。
+
+

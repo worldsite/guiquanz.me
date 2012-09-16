@@ -6,6 +6,16 @@ categories:
     - 技术
 tags:
     - fedora
+    - git
+    - vim
+    - R
+    - flex
+    - lemon
+    - bison
+    - ruby
+    - rails
+    - cmake
+    - scons
 ---
 ## 缘由
 
@@ -52,9 +62,9 @@ sudo yum install git-core svn
 <pre class="prettyprint linenums">
 sudo yum install ruby ruby-devdel
 sudo gem sources -a http://gems.github.com
-否则，会报错：
-ERROR:  While executing gem ... (Zlib::GzipFile::Error)
-    not in gzip format 
+  # 否则，会报错：
+  # ERROR:  While executing gem ... (Zlib::GzipFile::Error)
+  #  not in gzip format 
 sudo gem update
 sodu gem install rails
 </pre>
@@ -65,7 +75,6 @@ sudo yum install ibus ibus-sunpinyin
 </pre>
 
 10.安装特殊压缩工具：`7zip/Rar`
-
 <pre class="prettyprint linenums">
 sudo yum install p7zip p7zip-plugins unrar
 </pre>
@@ -92,10 +101,10 @@ sudo yum install openoffic.org-langpack-zh_CN #如果安装时，桌面已是中
 （2）安装chrome
 <pre class="prettyprint linenums">
 sodu yum install pax* redhat-lsb*
-否则，会报错：
-warning: google-chrome-stable_current_x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 7fac5991: NOKEY
-error: Failed dependencies:
-	lsb >= 4.0 is needed by google-chrome-stable-20.0.1132.57-145807.x86_64
+  # 否则，会报错：
+  # warning: google-chrome-stable_current_x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 7fac5991: 
+  # NOKEY error: Failed dependencies:
+  # lsb >= 4.0 is needed by google-chrome-stable-20.0.1132.57-145807.x86_64
 sodu yum sudo rpm -ivh google-chrome-stable_current_x86_64.rpm
 </pre>
 
