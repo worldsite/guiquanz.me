@@ -13,6 +13,7 @@
 	<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/atom.xml"/>
 </head>
 <body onload="prettyPrint()">
+<header class="header">
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
@@ -48,20 +49,19 @@
 			</div>
 		</div>
 </div>
-
+</header>
 <div class="mycontainer">
-
 {{ content }}
-
+</div>
 <footer>
+<div class="mycontainer">
 	<p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>, 
 	<a href="http://twitter.github.com/bootstrap/">Bootstrap</a> and 
 	<a href="http://www.github.com/guiquanz/">GitHub</a> 
 | <span class="label label-success">{{site.time | date:"%Y-%m-%d %H:%M:%S"}}</span>
 	</small></p>
-</footer>
-
 </div>
+</footer>
 
 <!-- for faster loading -->
 <script src="/js/jquery.min.js"></script>

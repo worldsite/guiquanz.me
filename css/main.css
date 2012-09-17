@@ -213,7 +213,8 @@ blockquote small {
     color: #999;
 }
 blockquote small:before {
-    content: '\2014 \00A0'}
+    content: '\2014 \00A0';
+}
 blockquote.pull-right {
     float: right;
     padding-left: 0;
@@ -239,7 +240,7 @@ cite {
 }
 code, pre {
     font-family: Monaco, Menlo, "Courier New", monospace;
-    font-size: 12px;
+    font-size: 14px;
 }
 code {
     padding: 3px 4px;
@@ -264,7 +265,7 @@ pre {
     white-space: pre-wrap;
     word-break: break-all;
 }
-.prettyprint.linenums{
+.prettyprint.linenums {
     -webkit-box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0;
     -moz-box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0;
     box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0
@@ -384,7 +385,7 @@ text-shadow: 0 1px 0 #fff;
 }
 .wrapper  {
     background-color:  #fff;
-    margin:  10px 0px 50px 0px;
+    margin:  10px 0px 40px 0px;
     padding:  10px 20px;
     moz-border-radius:  5px;
     webkit-moz-border-radius:  5px;
