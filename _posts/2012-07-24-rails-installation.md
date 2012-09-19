@@ -73,7 +73,7 @@ cd mysite && rails server
 __8、察看结果__
 
  浏览 http://localhost:3000 ，正常显示如下结果：
-<a href="/img/article/rails-hw.png" rel="lightbox"><img src="/img/article/rails-hw.png" alt="运行结果" class="frameit" width="400px" height="240px"></a>
+<a href="/img/article/rails-hw.png" rel="lightbox"><img src="/img/article/rails-hw.png" alt="运行结果" class="frameit" width="400px" height="240px"/></a>
 
 
 

@@ -10,7 +10,7 @@ footer {
     margin-top: -40px;
 }
 .nav>a {
-     margin:  0px 20px 0px 0px;
+     margin: 0px 20px 0px 0px;
 }
 
 html {
@@ -29,7 +29,7 @@ a:hover, a:active {
 }
 img {
     /*max-width: 740px;*/
-    height: auto;
+    /*height: auto;*/
     border: 0;
     -ms-interpolation-mode: bicubic;
 }
@@ -48,7 +48,7 @@ body {
     color: #555;
 }
 a {
-    color: #1D9D30;
+    color: #0000FF; /*#1D9D30;*/
     text-decoration: none;
 }
 a:hover {
@@ -100,27 +100,27 @@ h1 {
     font-size: 24px;
 }
 h1 small {
-    font-size: 16px;;
+    font-size: 16px;
 }
 h2 {
-    color: #777;
+    color: #00FF00;/*#777;*/
     background-color: #F2F8F9;
-    margin:  20px -20px;
-    font-size:  20px;
-    padding:  0px 20px;
-    line-height:  35px;
+    margin: 20px -20px;
+    font-size: 20px;
+    padding: 0px 20px;
+    line-height: 35px;
 }
 h2 small {
     font-size: 18px;
 }
 
 h3 {
-    color: #777;
+    color: #00FF00;/*#777;*/
     background-color: #F2F8F9;/*#F2F123;*/
-    margin:  20px -20px;
-    font-size:  16px;
-    padding:  0px 20px;
-    line-height:  24px;
+    margin: 20px -20px;
+    font-size: 16px;
+    padding: 0px 20px;
+    line-height: 24px;
 }
 
 h3 small {
@@ -205,7 +205,7 @@ blockquote p {
     font-size: 14px;
     line-height: 34px;
     font-weight: 300;
-    color:  #777;
+    color: #777;
 }
 blockquote small {
     display: block;
@@ -226,7 +226,9 @@ blockquote.pull-right p, blockquote.pull-right small {
     text-align: right;
 }
 q:before, q:after, blockquote:before, blockquote:after {
-    content: ""}
+    content: "";
+}
+
 address {
     display: block;
     margin-bottom: 30px;
@@ -381,31 +383,31 @@ text-shadow: 0 1px 0 #fff;
 .sitename {
     font-size: 40px;
     font-weight: bold;
-    color:  #333;
+    color: #333;
 }
-.wrapper  {
-    background-color:  #fff;
-    margin:  10px 0px 40px 0px;
-    padding:  10px 20px;
-    moz-border-radius:  5px;
-    webkit-moz-border-radius:  5px;
-     border-radius:  5px;
-    -webkit-box-shadow:  0px 1px 3px #A8ABAB;
-    -moz-box-shadow:  0px 1px 3px #A8ABAB;
-    box-shadow:  0px 1px 3px #A8ABAB;
+.wrapper {
+    background-color: #fff;
+    margin: 10px 0px 40px 0px;
+    padding: 10px 20px;
+    moz-border-radius: 5px;
+    webkit-moz-border-radius: 5px;
+     border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 3px #A8ABAB;
+    -moz-box-shadow: 0px 1px 3px #A8ABAB;
+    box-shadow: 0px 1px 3px #A8ABAB;
 }
 
 .postsList {
     margin: 0px 0px 10px 0px;
 }
 
-.postsList li{
+.postsList li {
   list-style: none;
   padding: 5px 3px;
   margin: 0;
   border-bottom: 1px solid #eee;
 }
-.postsList li span{
+.postsList li span {
   color: #bbb;
   float: right;
   font-size: 14px;
@@ -413,7 +415,7 @@ text-shadow: 0 1px 0 #fff;
 
 @media only screen and (max-width:768px) {
     .mycontainer {
-    width:  auto;
+    width: auto;
     padding: 20px;
 }
 .sitename {
@@ -422,9 +424,9 @@ text-shadow: 0 1px 0 #fff;
     text-align: center;
 }
 
-.wrapper  {
-    background-color:  #fff;
-    margin:  10px 0px 20px 0px;
+.wrapper {
+    background-color: #fff;
+    margin: 10px 0px 20px 0px;
 }
 
 }

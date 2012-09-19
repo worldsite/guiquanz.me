@@ -1,12 +1,21 @@
 ---
 layout: default
-title: 书品
+title: 书品列表
 permalink: /book_reviews/
 keywords:
   - 书品 
 ---
 <div class="wrapper">
 <h2> 技术元素 </h2>
-  <img alt="技术元素" src="/img/book_covers/jishuyuansu.jpg" />
+  <img alt="技术元素" src="/img/book_covers/jishuyuansu.jpg"/>
+</div>
+<div class="wrapper">
+<h2> 弯曲点评 </h2>
+{% for post in site.posts %}
+	{% if post.bookview %}
+	<h3><a href="{{ post.url }}">{{ post.title }}</a> <small class="pull-right">{{ post.date | date:"%b %e, %Y" }}</small></h3>
+	{% endif %}
+{% endfor %}
+<img src="/img/article/youxian.jpg" width="240px" height="160px"/>
 </div>
 

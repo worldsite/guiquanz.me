@@ -2,14 +2,15 @@
 layout: post
 title: Unix的设计哲学
 date: 2012-09-15
+bookview: true
 categories:
     - 书品
 tags:
     - Unix
     - Linux
     - 设计
+excerpt: <img src="/img/book_covers/Linux_and_Unix_Philosophy.jpg" width="240px" height="120px"/>Unix是一种设计精良的、高性能、高可靠的多用户高实时操作系统，是现代操作系统的鼻祖。她的成功研制，凝聚了几代人的心血。同时，也为现代高性能的通用后端系统设计积累了很多宝贵的经验。这些设计经验，甚至被*nix阵营称为“Unix的哲学”，系统设计的“黄金准则”。
 ---
-## Unix
 
 `Unix`是一种设计精良的、高性能、高可靠的多用户高实时操作系统，是现代操作系统的鼻祖。她的成功研制，凝聚了几代人的心血。同时，也为现代高性能的通用后端系统设计积累了很多宝贵的经验。这些设计经验，甚至被*\*nix阵营*称为“Unix的哲学”（当然也是和Windows阵营打口水仗的秘密武器），系统设计的“黄金准则”。
 
@@ -21,19 +22,19 @@ tags:
 
 > <span class="badge badge-warning">1</span>: 小即是美（SMALL）
 
-> <span class="badge badge-warning">2</span>: 让每一个程序只做一件事（1 THING）
+> <span class="badge badge-warning">2</span>: 让每一个程序只做好一件事（1 THING）
 
 > <span class="badge badge-warning">3</span>: 尽快建立原型（PROTO）
 
 > <span class="badge badge-warning">4</span>: 舍高效而取可移植性（PORT）
 
-> <span class="badge badge-warning">5</span>: 使用纯文本来存储数据（FLAT）
+> <span class="badge badge-warning">5</span>: 使用纯文本文件来存储数据（FLAT）
 
 > <span class="badge badge-warning">6</span>: 充分利用软件的杠杆效应（REUSE）
 
 > <span class="badge badge-warning">7</span>: 使用Shell来提高杠杆效应及可移植性（SCRIPT）
 
-> <span class="badge badge-warning">8</span>: 避免那些强制性的用户界面（NOCUI）
+> <span class="badge badge-warning">8</span>: 避免强制性的用户界面（NOCUI）
 
 > <span class="badge badge-warning">9</span>: 让每一个程序都成为过滤器（FILTER）
 
@@ -41,7 +42,7 @@ tags:
 
 > <span class="badge badge-warning">11</span>: 尽量使操作系统的内核小而轻巧（kernel）
 
-> <span class="badge badge-warning">12</span>: 使用小写字母并尽量简短（lcase）
+> <span class="badge badge-warning">12</span>: 使用小写字母，并尽量保持简短（lcase）
 
 > <span class="badge badge-warning">13</span>: 保护树木（trees）
 
