@@ -16,7 +16,7 @@ footer {
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%;
 }
 
 a:focus {
@@ -28,8 +28,8 @@ a:hover, a:active {
     outline: 0;
 }
 img {
-    /*max-width: 740px;*/
-    /*height: auto;*/
+    /* max-width: 740px; */
+    /* height: auto; */
     border: 0;
     -ms-interpolation-mode: bicubic;
 }
@@ -48,7 +48,7 @@ body {
     color: #555;
 }
 a {
-    color: #0000FF; /*#1D9D30;*/
+    color: #0000FF;
     text-decoration: none;
 }
 a:hover {
@@ -103,7 +103,7 @@ h1 small {
     font-size: 16px;
 }
 h2 {
-    color: #00FF00;/*#777;*/
+    color: #00FF00;
     background-color: #F2F8F9;
     margin: 20px -20px;
     font-size: 20px;
@@ -115,8 +115,8 @@ h2 small {
 }
 
 h3 {
-    color: #00FF00;/*#777;*/
-    background-color: #F2F8F9;/*#F2F123;*/
+    color: #00FF00;
+    background-color: #F2F8F9;
     margin: 20px -20px;
     font-size: 16px;
     padding: 0px 20px;
@@ -228,7 +228,6 @@ blockquote.pull-right p, blockquote.pull-right small {
 q:before, q:after, blockquote:before, blockquote:after {
     content: "";
 }
-
 address {
     display: block;
     margin-bottom: 30px;
@@ -270,7 +269,7 @@ pre {
 .prettyprint.linenums {
     -webkit-box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0;
     -moz-box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0;
-    box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0
+    box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0;
 }
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
@@ -306,7 +305,6 @@ text-shadow: 0 1px 0 #fff;
 .pln {
     color: #48484c;
 }
-
 .pager {
     margin-left: 0;
     margin-bottom: 10px;
@@ -316,7 +314,8 @@ text-shadow: 0 1px 0 #fff;
 }
 .pager:before, .pager:after {
     display: table;
-    content: ""}
+    content: "";
+}
 .pager:after {
     clear: both;
 }
@@ -398,9 +397,9 @@ text-shadow: 0 1px 0 #fff;
 }
 
 .postsList {
-    margin: 0px 0px 10px 0px;
+    /* margin: 0px 0px 10px 0px; */
+    margin: 10px 0px 40px 0px;
 }
-
 .postsList li {
   list-style: none;
   padding: 5px 3px;
@@ -430,4 +429,5 @@ text-shadow: 0 1px 0 #fff;
 }
 
 }
+
 
