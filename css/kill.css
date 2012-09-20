@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0; padding:0; color:#464646; background:#fff;}
+.clear{clear: both;  height:0; font-size:0px; overflow:hidden; margin:0; padding:0; }
+dd, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p{padding: 0; margin: 0;}
+ul{list-style:none outside none; margin:0; padding:0;}
+li{list-style-type:none; margin:0; padding:0;}
+a { color:#0088AE;text-decoration: none; outline:none; margin:0; padding:0;} /* for firefox */
+a:hover { text-decoration: none; cursor:pointer; outline:none; color:#00607c; }
+img{ border:0;}
+input:focus, textarea:focus {outline: 0;}
+.clear{ clear:both;}
+
+
+
+
+/**********index**********/
+.wrapper{ width:940px; margin:0 auto;}
+
+.navorlogo{ overflow:hidden;zoom:1;}
+.logo{ float:left; width:264px;}
+#menu{width:650px; float:right;}
+ul#nav{ float:right; padding-top:15px;Font-family:Helvetica, Microsoft YaHei, Tahoma, Arial, sans-serif; overflow:hidden;zoom:1;width:500px;border-bottom:1px solid #c5e2ea;}
+ul#nav li{float:left;line-height:30px;font-size:14px;text-align:center;margin-right:40px;}
+
+ul#nav li a{display:block;color:#353535;cursor:pointer}
+ul#nav li a:hover{text-decoration:none;border-bottom:3px solid #e1473b;}
+ul#nav li.nav_over{border-bottom:3px solid #e1473b;}
+ul#nav li ul{width:200px;padding-bottom:10px;background:#fff;border:2px #c5e2ea solid;position:absolute;*margin-left:-55px;}
+ul#nav li ul li{float:none; padding:0px 10px;width:auto;font-weight:normal;text-align:left;border-bottom:1px #d8d8d8 dashed;}
+ul#nav li ul li a{display:inline;color:#666;}
+ul#nav li ul li a:hover{text-decoration:underline;background:none; color:#e1473b;}
+
+.ad{ margin:10px 0;}
+.l{ float:left;}
+.r{ float:right;}
+.w700{ width:700px;}
+.w210{ width:220px;}
+
+h4{Font-family:Helvetica, Microsoft YaHei, Tahoma, Arial, sans-serif; font-size:16px; border-bottom:1px dashed #8dc0ce; color:#e5574d; line-height:30px; font-weight:normal;}
+.intro{Font-family:Helvetica, Microsoft YaHei, Tahoma, Arial, sans-serif; font-size:12px; color:#535353; line-height:22px; margin-top:10px;}
+.join{ margin:20px 0;}
+.weibo_h{Font-family:Helvetica, Microsoft YaHei, Tahoma, Arial, sans-serif; font-size:16px; color:#e5574d;}
+.weibo_n{ border:1px solid #d5e8ee;}
+
+.w340{ width:340px; float:left; margin-bottom:10px; height:348px;}
+.one1{ margin-left:20px;}
+.more a{ font-size:12px; color:#666666; line-height:24px;}
+.more a:hover{ color:#39F;}
+.intro dl{ border-bottom:1px dashed #e7e7e7; padding-bottom:5px; margin-top:5px;}
+.intro dl dt a{ color:#0088ae; font-weight:bold;}
+
+.n_people_cen{ background:#eff6f7; border:1px solid #d5e8ee; border-bottom:none; border-top:none; padding:5px 10px;Font-family:Helvetica, Microsoft YaHei, Tahoma, Arial, sans-serif; font-size:12px; line-height:22px; }
+
+.title{Font-family:Helvetica, Microsoft YaHei, Tahoma, Arial, sans-serif; font-size:16px; color:#0081a5; font-weight:bold; margin-bottom:15px;}
+dl.nr{ overflow:hidden; zoom:1;}
+.line{ border-bottom: 1px dashed #8dc0ce; margin:15px 0;}
+dl.nr dt{ width:89px; float:left;}
+dl.nr dd{ width:207px; float:right; }
+dl.nr dd, h6{ font-size:12px; line-height:24px;}
+dl.nr dd, p{ margin:3px 0; line-height:22px;  color:#535353;}
+
+dl.sj{ overflow:hidden; zoom:1; border-bottom: 1px dashed #e7e7e7; padding-bottom:5px; margin-top:5px;}
+dl.sj dt{width:115px; float:left; }
+dl.sj dd{ width:190px; float:right; line-height:20px;}
+dl.sj dd .t a{color:#0088ae;}
+dl.sj dd p{ width:190px; float:right; line-height:20px;}
+
+ul.fx li{ background:url(images/point_32.jpg) 0 11px no-repeat; padding-left:10px;}
+ul.fx li a{ color:#535353; line-height:24px;}
+ul.fx li a:hover{ text-decoration:underline;}
+
+.talk{ width:700px;}
+ul.tl li{ background:url(images/point_32.jpg) 0 11px no-repeat; padding-left:10px; float:left; width:300px; margin:0 15px;}
+ul.tl li a{ color:#535353; line-height:24px;}
+ul.tl li a:hover{ text-decoration:underline;}
+
+dl.news dt{ font-size:14px; color:#0088ae; font-weight:bold; padding-top:15px;}
+dl.news{ border-bottom:1px dashed #d8d8d8; padding-bottom:15px;}
+
+.page{text-align:center; margin-top:15px;}
+#pagebar { height:22px; font-size:12px; text-align:center}
+#pagebar a,#pagebar .page_now {margin-right:1px; padding:1px 6px;  border:#dedede solid 1px; color:#666;}
+#pagebar a {margin:0 1px;}
+#pagebar a:hover {color:#fff; background:#999;}
+#pagebar .page_now {background:#999;background-image:none;color:#fff; border:#999 solid 1px; }
+
+dl.share{ overflow:hidden; zoom:1; border-bottom: 1px dashed #e7e7e7;  padding-bottom:15px; padding-top:10px;}
+dl.share dt{ float:left; width:136px;}
+dl.share dd{ float:right; width:550px;}
+dl.share dd h5 a{ font-size:14px; color:#0088ae;}
+
+h6{ font-size:14px; line-height:24px; color:#0088ae;text-align: center;}
+.talk p{ margin:10px 0; padding:0;}

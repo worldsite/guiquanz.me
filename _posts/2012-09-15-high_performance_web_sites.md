@@ -8,7 +8,11 @@ categories:
 tags:
     - web
     - 设计
-excerpt: <img src="/img/book_covers/high_performance_web_sites.png" width="240px" height="120px"/>分享源于Yahoo工程师Steve Souders和Nate Koechley所著《High Performance Web Sites》一书中提到的14条性能方面的设计原则，希望大家以此共勉，并不断创新。虽然是2007年出版的书，但这些原则都是大牛们大量实践的宝贵结晶，放在当下依然有非常高的价值。
+excerpt: <dl class="nr">
+ <dt><img src="/img/book_covers/high_performance_web_sites.png"/> </dt>
+ <dd>
+ <p>分享源于Yahoo工程师Steve Souders和Nate Koechley所著《High Performance Web Sites》一书中提到的14条性能方面的设计原则，希望大家以此共勉，并不断创新。虽然是2007年出版的书，但这些原则都是大牛们大量实践的宝贵结晶，放在当下依然有非常高的价值。</p>
+ </dd> </dl>
 ---
 ## 缘由
 

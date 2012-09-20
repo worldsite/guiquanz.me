@@ -33,12 +33,6 @@ img {
     border: 0;
     -ms-interpolation-mode: bicubic;
 }
-.wrapper p img {
-    clear: both;
-    display: block;
-    margin-left: -20px;
-    margin-right: -20px;
-}
 
 body {
     /* margin: 0; */
@@ -423,11 +417,30 @@ text-shadow: 0 1px 0 #fff;
     text-align: center;
 }
 
-.wrapper {
-    background-color: #fff;
-    margin: 10px 0px 20px 0px;
 }
 
+dl.nr { 
+    overflow:hidden;
+    zoom:1;
 }
 
+dl.nr dt {
+    width:190px;
+    float:left;
+}
+dl.nr dd {
+    width:500px;
+    float:right;
+    font-size:12px;
+    line-height:24px;
+}
+dl.nr dd {
+    margin:0px 0px;
+    line-height:22px;
+    color:#535353;
+}
+dl.nr img {
+    width: 170px;
+    height:120px;
+}
 

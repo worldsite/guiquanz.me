@@ -1,9 +1,9 @@
-{% for post in site.posts limit:3 %}
+{% for post in site.posts limit:4 %}
 <div class="wrapper">
 	<h1><a href="{{ post.url }}">{{ post.title }}</a> <small class="pull-right">{{ post.date | date:"%b %e, %Y" }}</small></h1>
 	{% if post.excerpt %}
 		{% for tag in post.tags %}
-				<a class="label pull-right" href="/tag/#{{ tag }}">{{ tag }}</a>
+		<a class="label" href="/tag/#{{ tag }}">{{ tag }}</a>
 		{% endfor %}
 		<p>{{ post.excerpt }}</p>
 		<p><a class="btn small pull-right" href="{{ post.url }}">继续阅读&raquo; </a></p>
@@ -20,7 +20,7 @@
 {% endcomment %}
 <div class="wrapper">
 <ul class="postsList">
-{% for post in site.posts limit:5 offset:3 %}
+{% for post in site.posts limit:5 offset:4 %}
 <li><span>{{ post.date | date: "%b %d, %Y" }}
 </span> <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
