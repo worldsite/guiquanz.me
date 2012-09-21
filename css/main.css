@@ -117,6 +117,15 @@ h3 {
     line-height: 24px;
 }
 
+h4{
+    color: #00F000;
+    background-color: #F2F8F9;
+    margin: 20px -20px;
+    font-size: 15px;
+    padding: 0px 20px;
+    line-height: 24px;
+}
+
 h3 small {
     font-size: 14px;
 }
@@ -425,11 +434,11 @@ dl.nr {
 }
 
 dl.nr dt {
-    width:190px;
+    width:170px;
     float:left;
 }
 dl.nr dd {
-    width:500px;
+    width:510px;
     float:right;
     font-size:12px;
     line-height:24px;
