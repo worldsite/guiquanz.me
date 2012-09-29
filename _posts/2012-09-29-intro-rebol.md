@@ -20,7 +20,7 @@ excerpt: <dl class="nr">
 ![强悍的编程能力](/img/article/rebol_e1.png)
 
 ## Rebol简介
-[REBOL](http://Rebol.com/)发音 reb-ol \[\'reb-ol\]，是英文`R`elative `E`xpression `B`ased `O`bject `L`anguage 的缩写。它是一种`基于相关表达式的对象语言`，结合了编程语言和元数据语言的特点，具有方言化的功能。而且是针对分布式计算而设计。Rebol是，由AmigaOS的架构师[Carl Sassenrath](http://en.wikipedia.org/wiki/Carl_Sassenrath),在1997年发布的语言。Rebol在随后的日子里有了很多发展，功能很强大，但依然是一门小众预言（或许和闭源等有关），估计很多人都不曾了解它。我也是在一次偶然的机会在书店妨翻到`蔡学镛`先生的《`编程ING`》一书，才了解的（信息孤岛）。
+[REBOL](http://Rebol.com/)发音 reb-ol \['reb-ol\]，是英文`R`elative `E`xpression `B`ased `O`bject `L`anguage 的缩写。它是一种`基于相关表达式的对象语言`，结合了编程语言和元数据语言的特点，具有方言化的功能。而且是针对分布式计算而设计。Rebol是，由AmigaOS的架构师[Carl Sassenrath](http://en.wikipedia.org/wiki/Carl_Sassenrath),在1997年发布的语言。Rebol在随后的日子里有了很多发展，功能很强大，但依然是一门小众语言（或许和闭源等有关），估计很多人都不曾了解它。我也是在一次偶然的机会在书店妨翻到`蔡学镛`先生的《`编程ING`》一书，才了解的（信息孤岛）。
 
 ## Rebol的特性
 
