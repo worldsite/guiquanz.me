@@ -30,8 +30,8 @@ excerpt: <dl class="nr">
 
 ### 在连接（linking）时，使用了无效的flag
 
-前期版本的gcc/g++/gfortran等在完全无效的选项上不会产生告警或错误。命令行，如果没人任何东西被编译，但仅连接被执行。新版本
-GCC 4.7针对这些问题，进行了相应的处理。例如，
+前期版本的gcc/g++/gfortran等在完全无效的选项上不会产生告警或错误（在命令行中，如果没有任何东西被编译，仅`连接`被执行）。新版本
+GCC 4.7针对这些问题，进行了相应的强化处理。例如，
 <pre class="prettyprint linenums">
 gcc -Wl -o foo foo.o -mflat_namespace
 </pre>
@@ -62,7 +62,7 @@ parameter, so a declaration of 'offsetof' must be available
 
 ### 线程支持的检测
 
-应该使用`POSIX`规范的`_REENTRANT`宏而不是私有的GCC-implementation-space的宏，如_GLIBCXX_HAS_GTHREADS等在编译时检测线程并发的支持。
+应该使用`POSIX`规范的`_REENTRANT`宏，而不是私有的GCC-implementation-space宏（如`_GLIBCXX_HAS_GTHREADS`等），在编译时检测线程并发的支持。
 
 ### 名字查询调整
 
@@ -94,7 +94,7 @@ In instantiation of ‘int t(T) [with T = int]’
   note: ‘int f(int)’ declared here, later in the translation unit
 </pre>
 
-修正问题的手段： 确保f函数在t中第一次使用之前已经声明。例如，
+修正问题的手段： 确保`f函数`在`t`中第一次使用之前已经声明。例如，
 <pre class="prettyprint linenums">
 int
 f(int i)
@@ -139,14 +139,12 @@ error: ‘int i’ previously declared here
 
 ### 用户自定义的“字面值”和“空格”
 
-处于ISO C11模式std={c++11,c++0x,gnu++11,gnu++0x}下的C++编译器，支持用户自定义“字面值”，这与合法的ISO C++03代码不兼容。
-
-尤其，现在需要在字符串字面值之后和一些有效的用户自定义字面值之前需要“空格”。以有效的ISO C++03代码为例：
+处于ISO C11模式std={c++11,c++0x,gnu++11,gnu++0x}下的C++编译器，支持用户自定义“字面值”，这与合法的ISO C++03代码不兼容。尤其，现在必须在字符串字面值之后和一些有效的用户自定义字面值之前增加“空格”。以有效的ISO C++03代码为例：
 <pre class="prettyprint linenums">
 const char *p = "foobar"__TIME__;
 </pre>
 
-在C++03中, 宏\_\_TIME\_\_展开为一个“字符串字面值”，被拼接到另一个字符串中。而在C++11中\_\_TIME\_\_将不被展开，相反会查询操作符"" \_\_TIME\_\_，结果会产生以下的诊断：
+在C++03中, 宏`__TIME__`展开为一个“字符串字面值”，被拼接到另一个字符串中。而在C++11中`__TIME__`将不被展开，相反会查询操作符`"" __TIME__`，结果会产生以下的诊断：
 
 <pre class="prettyprint">
  error: unable to find string literal operator
