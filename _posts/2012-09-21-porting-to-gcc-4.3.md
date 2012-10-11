@@ -81,8 +81,7 @@ foo()
 
 > error: 'strcmp' was not declared in this scope
 
-> The table below shows some of the missing items, and the header file that will have to be added as an #include for the compile to succeed.
-
+涉及到的关系表，如下:
 <table title="" border="1">
   <tbody><tr>
     <th> 如果此内容找不到 </th>
@@ -289,13 +288,9 @@ int main()
 
 通过`4.3之前的GCC`版本编译，会产生如下告警：
 <pre class="prettyprint">
-warning: #warning This file includes at least one deprecated or
-antiquated header. Please consider using one of the 32 headers found
-in section 17.4.1.2 of the C++ standard. Examples include substituting
-the <X> header for the <X.h> header for C++ includes, or
-<iostream> instead of the deprecated header
-<iostream.h>. To disable this warning use -Wno-deprecated.
+warning: #warning This file includes at least one deprecated or antiquated header. 
 </pre>
+请酌情使用`C++标准文档 17.4.1.2节`（这个可能会有变化）罗列的`32`个头文件中的一个。比如，用<X>替换原来的<X.h>头文件或用<iostream>替换<iostream.h>。如果需要禁用此告警，请使用`-Wno-deprecated`编译选项。
 
 用`4.3版本`编译，会报错：
 <pre class="prettyprint">
@@ -320,7 +315,7 @@ int main()
 
 #### 名字查询变更
 
-GCC默认不再支持以下的代码：
+GCC默认不再支持以下代码：
 <pre class="prettyprint linenums">
 template &lt;class _Tp&gt; class auto_ptr {};
 template &lt;class _Tp&gt;
@@ -385,7 +380,7 @@ int main(int m, char** c)
 
 #### 明确的template特殊化，不能拥有存储class
 
-殊化的模板（template）不能明确制定存储class，以及相同的存储作为主template。这是根据`ISO C++ Core Defect Report 605`修改的行为。具体，如下：
+殊化的模板（template）不能明确指定存储class，以及相同的存储作为主template。这是根据`ISO C++ Core Defect Report 605`修改的行为。具体，如下：
 
 <pre class="prettyprint linenums">
 template&lt;typename T&gt;
@@ -400,7 +395,7 @@ template<>
 error: explicit template specialization cannot have a storage class
 </pre>
 
-对于外部指定符也存在此问题。修正方法：去掉“特殊化”上的“存储指定符”即可。具体，如下：
+`外部说明符（指示符）`也存在此问题。修正方法：去掉“特殊化”上的“存储说明符”即可。具体，如下：
 <pre class="prettyprint linenums">
 template&lt;typename T&gt;
   static void foo();

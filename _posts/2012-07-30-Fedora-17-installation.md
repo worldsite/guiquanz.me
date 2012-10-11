@@ -23,6 +23,8 @@ tags:
 
 备注: `本文仅适用于Fedora环境`。
 
+## 软件安装
+
 1.安装编辑器：`vim`
 <pre class="prettyprint linenums">
 sudo yum install vim

@@ -1,7 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  <meta charset="utf-8"/>
   <title>{{ page.title }}</title>
   <meta name="author" content="{{ site.author }}"/>
   <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
@@ -34,7 +34,7 @@
           <li><a href="/license"><i class="icon-fire icon-white"></i>版权声明</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-white"></i>关于<b class="caret"></b></a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
               <li><a href="/about"><i class="icon-plus-sign"></i>关于我</a></li>
               <li class="divider"></li>
               <li><a href="/about_writing"><i class="icon-pencil"></i>关于创作</a></li>
@@ -43,7 +43,7 @@
           <li><a href="/open_source.html"><i class="icon-leaf icon-white"></i>开源项目</a></li>
         </ul>
         <form class="navbar-search pull-right" method="GET" action="https://www.google.com/search">
-          <input type="text" name="as_q" class="search-query" placeholder="搜索...">
+          <input type="text" name="as_q" class="search-query" placeholder=" 搜索...">
           <input type="hidden" name="as_sitesearch" value="guiquanz.github.com">
         </form>
         </div><!--/.nav-collapse -->
@@ -101,10 +101,8 @@
   var bds_config = {"bdTop":80};
   document.getElementById("bdshell_js").src = "http://share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
 </script>
-<!-- Baidu Button END -->
 <!-- UJian Button BEGIN -->
-<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&btn=2&uid=1675928">
-</script>
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&btn=2&icon=3&uid=1675928"></script>
 <!-- UJian Button END -->
 </body>
 </html>

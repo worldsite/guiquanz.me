@@ -6,11 +6,10 @@ categories:
   - 技术
 tags:
   - Rebol
-
 excerpt: <dl class="nr">
  <dt><img src="/img/article/rebol.gif"/> </dt>
  <dd>
- <p> 2012年9月25日，<a href="http://www.Rebol.com/article/0511.html">Carl Sassenrath</a>对外宣布计划在十月初R3发布之后开源<a href="http://Rebol.com/">Rebol</a>语言。目前正在进一步征集意见，预计采用GPL 2协议，并且同时会在GitHub上释放代码。对很多人来说，期盼已久的事终于要到了。Rebol是一种特殊的SDL语言，WEB、GUI样样都能搞定，跨平台，关键是代码非常简单、明了，还不失优雅。据说其内核也非常精巧，不过几百k而已。期待，借此对Rebol进行深入的研究...</p>
+ <p> 2012年9月25日，<a href="http://www.Rebol.com/article/0511.html">Carl Sassenrath</a>对外宣布计划在十月初R3发布之后开源<a href="http://Rebol.com/">Rebol</a>语言。目前正在进一步征集意见，预计采用GPL 2协议，并且同时会在<a href="https://www.github.com">GitHub</a>上释放代码。对很多人来说，期盼已久的事终于要到了。Rebol是一种特殊的SDL语言，WEB、GUI样样都能搞定，跨平台，关键是代码非常简单、明了，还不失优雅。据说其内核也非常精巧，不过几百k而已。期待，借此对Rebol进行深入的研究...</p>
  </dd> </dl>
 ---
 
@@ -20,7 +19,7 @@ excerpt: <dl class="nr">
 ![强悍的编程能力](/img/article/rebol_e1.png)
 
 ## Rebol简介
-[REBOL](http://Rebol.com/)发音 reb-ol \['reb-ol\]，是英文`R`elative `E`xpression `B`ased `O`bject `L`anguage的缩写。它是一种`基于相关表达式的对象语言`，结合了编程语言和元数据语言的特点（语言本身就是自己的`元语言`），具有`方言化`的功能，而且是针对分布式计算而设计的，由AmigaOS的架构师[Carl Sassenrath](http://en.wikipedia.org/wiki/Carl_Sassenrath),于1997年开发的。Rebol在往后的岁月有了很多发展，功能很强大，但依然是一门小众语言（或许和闭源等有关），估计很多人都不曾了解它。我也是在一次偶然的机会在书店翻到`蔡学镛`先生的《`编程ING`》一书，才了解的（信息孤岛）。
+[REBOL](http://Rebol.com/)发音 reb-ol \['reb-ol\]，是英文`R`elative `E`xpression `B`ased `O`bject `L`anguage的缩写。它是一种`基于相关表达式的对象语言`，结合了编程语言和元数据语言的特点（语言本身就是自己的`元语言`），具有`方言化`的功能，而且是针对分布式计算而设计的，由AmigaOS的架构师[Carl Sassenrath](http://en.wikipedia.org/wiki/Carl_Sassenrath),于1997年开发的。Rebol在往后的岁月有了很多发展，功能很强大，但依然是一门小众语言（或许和闭源等有关），估计很多人都不曾了解它。我也是一次偶然的机会在书店翻到`蔡学镛`先生的《`编程ING`》一书，才了解的（信息孤岛）。
 
 ## Rebol的特性
 
@@ -124,5 +123,4 @@ halt
 1. [Rebol官网](http://rebol.com)；
 2. [Rebol文档](http://www.rebol.com/docs.html);
 3. [更多Rebol编程示例](http://www.rebol.net/cookbook)。
-
 

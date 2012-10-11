@@ -15,6 +15,8 @@ tags:
 
 提示：`编译过程很慢，并且需要准备 > 4.2G的磁盘空间，Boost占1G左右，mongodb占3.2G左右。本文仅适用于Ubuntu环境`。
 
+## 软件安装
+
 __0、创建工作目录__
 <pre class="prettyprint linenums">
 mkdir -p ~/mongodb && cd ~/mongodb 

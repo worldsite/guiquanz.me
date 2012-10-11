@@ -13,6 +13,8 @@ tags:
 
 备注: *本文仅适用于`Ubuntu`环境*。
 
+## 软件安装
+
 __0、创建工作目录__
 <pre class="prettyprint linenums">
 mkdir -p ~/ruby && cd ~/ruby
