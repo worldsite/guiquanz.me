@@ -119,10 +119,10 @@ h3 {
 }
 
 h4{
-    color: #00F000;
+    color: #00BFFF;
     background-color: #F2F8F9;
     margin: 20px -20px;
-    font-size: 15px;
+    font-size: 14px;
     padding: 0px 20px;
     line-height: 24px;
 }
@@ -137,7 +137,7 @@ h4 {
     font-size: 14px;
 }
 h4 small {
-    font-size: 12px;
+    font-size: 14px;
 }
 h5 {
     font-size: 12px;
@@ -179,10 +179,11 @@ dt {
 dd {
     margin-left: 14px;
 }
-hr {
+hr { 
     margin: 30px 0;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px dashed #eee;
+    /*padding-top:10px; padding-bottom:5px; border-bottom:1px dashed #ccc;*/
 }
 strong {
     font-weight: bold;
@@ -451,6 +452,6 @@ dl.nr dd {
 }
 dl.nr img {
     width: 170px;
-    height:120px;
+    height:80px;
 }
 
