@@ -94,8 +94,8 @@ $ sudo yum install graphviz
 <pre class="prettyprint linenums">
 $ cd ~/project1
 $ cat << EOF > test.c
-#include <stdio.h>
-#include <stdlib.h>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
 
 void test1()
 {
