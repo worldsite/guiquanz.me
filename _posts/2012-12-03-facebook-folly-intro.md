@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Fackbook Folly C++11组件库简介及安装
+title: Facebook Folly C++11组件库简介及安装
 date: 2012-12-03
 categories:
   - 技术
