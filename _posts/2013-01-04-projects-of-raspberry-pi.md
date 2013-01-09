@@ -20,7 +20,16 @@ Raspberry Pi无疑是2012年最火爆的开源硬件产品。如果你还不了�
 [Raspberry Pi](http://www.raspberrypi.org/)，是一款基于Linux系统的开发板，配备一枚700MHz的处理器，256Mb内存，支持SD卡和Ethernet，拥有两个USB接口，以及 HDMI和RCA输出支持。虽然Raspberry Pi看起来非常的迷你——只有一张信用卡大小,但是它能够运行像《雷神之锤三：竞技场》这样的游戏和进行1080p视频的播放等。硬件基础是ARM，操作系统采用开源的Linux系统，比如Debian、ArchLinux等分A,B两中型号，其中A型售价仅25美元。淘宝上也可以买到。
 
 
+### Raspberry Pi应用示意图
+
+![](/img/article/raspberrypi/pi-demo.jpg)
+
+
 ## Pi创意设计
+
+![](/img/article/raspberrypi/raspberry-pi-pc.jpg)
+
+0、[Pi-to-Go 便携式电脑](http://cn.engadget.com/tag/Pi-to-Go/):利用3D打印机制作,配有屏幕和键盘
 
 ![](/img/article/raspberrypi/shishiwendu.png)
 
