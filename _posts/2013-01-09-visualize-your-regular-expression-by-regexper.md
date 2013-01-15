@@ -1,43 +1,42 @@
 --- 
 layout: post
-title: 巧用RegExper可视化模式呈现正则表达式
+title: 巧用RegExper可视化呈现正则表达式
 date: 2013-01-09
 categories:
   - 技术
 tags:
-  - RegExper
   - 正则表达式
+  - RegExper
 ---
 
 ## 你是否还再为复杂的正则表达式分析烦恼？
 
 ![](/img/article/regexper/demo1.png)
 
-正则表达是，软件开发、维护人员`必须`掌握的实用技术之一（__如果你还不会，小心屁股挨板子哦__）。在`grep`中、`awk`，`sed`里，经常有她的倩影。在python、ruby中，也会时常出现……。其实，`perl`才是她的据点。正则表达式很美，她无处不在（日志提取、分析，词法分析等等）。
+正则表达是，软件开发、维护人员`必须`掌握的实用技术之一（__如果你还不会，小心屁股挨板子哦__）。在`grep`中、`awk`，`sed`里，经常有她的倩影。在`python`、`ruby`中，也会时常出现……。其实，`perl`才是她的据点。正则表达式很美，她无处不在（日志提取、分析，词法分析等等）。
 
-可是，面对复杂的表达式时，你有过抓狂的时候吗？下面给你介绍一个实用工具RegExper，它可以帮你可视化正则表达式。
+可是，面对复杂的表达式时，你有过抓狂的时候吗？下面给你介绍一块实用工具RegExper，它可以帮你可视化正则表达式。
 
 
 ## RegExper简介
 
-[RegExper](http://www.regexper.com/)是，一个开源工具。它通过`javascript`和`ruby`实现，提供基于B/S模式的正则表达式的可视化平台，方便各种分析使用。你可以通过访问[http://www.regexper.com](http://www.regexper.com),尝试分析各种场景。
+[RegExper](http://www.regexper.com/)是，一块开源工具软件。基于`javascript`和`ruby`实现，提供B/S模式的正则表达式的可视化平台，方便各种分析使用。可以通过访问[http://www.regexper.com](http://www.regexper.com),尝试分析各种场景。
 
 RegExper，已在`github`上开源。项目地址为[https://github.com/javallone/regexper](https://github.com/javallone/regexper)。可以自己折腾代码咯。
 
 ![](/img/article/regexper/demo2.png)
 
-__**备注**__
-
-目前regexper不支持分析结果（png等格式）的导出操作。以后应该会有改善。
+__**备注:**__ 目前regexper不支持分析结果（png等格式）的导出操作。以后应该会有改善。
 
 
 ## 扩展阅读
 
-* "perlre - Perl regular expressions" [http://perldoc.perl.org/perlre.html](http://perldoc.perl.org/perlre.html)
-* "Implementing Regular Expressions" [http://swtch.com/~rsc/regexp](http://swtch.com/~rsc/regexp)
-* The re1 project: [http://code.google.com/p/re1/](http://code.google.com/p/re1/)
-* The re2 project: [http://code.google.com/p/re2/](http://code.google.com/p/re2/)
+1. "perlre - Perl regular expressions" [http://perldoc.perl.org/perlre.html](http://perldoc.perl.org/perlre.html)
 
+2. "Implementing Regular Expressions" [http://swtch.com/~rsc/regexp](http://swtch.com/~rsc/regexp)
 
+3. The re1 project: [http://code.google.com/p/re1](http://code.google.com/p/re1)
+
+4. The re2 project: [http://code.google.com/p/re2](http://code.google.com/p/re2)
 
 

@@ -1,15 +1,7 @@
 ---
 layout: default
-title: 404
+title: 404公益
 ---
-<div class="alert">
-<strong>Oops！</strong>您可以看看下面的文章：
-</div>
 <div class="wrapper">
-<ul class="postsList">
-{% for post in site.posts limit:20 offset:8 %}
-<li><span>{{ post.date | date: "%b %d, %Y" }}
-</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+<iframe scrolling='no' frameborder='0' src='http://yibo.iyiyun.com/js/yibo404' width='700' height='660' style="display:block;"></iframe>
 </div>
