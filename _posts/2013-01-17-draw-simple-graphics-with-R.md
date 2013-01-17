@@ -33,12 +33,12 @@ tags:
 ```{r fig.width=5,fig.height=4 }
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
-# 用默认环境，绘制图像
+# 用默认环境，绘制图
 plot(cars)
 ```
 </pre>
 
-2.增加标题，用线链接点，并进行部分着色
+2.增加标题，用线连接点，并进行部分着色
 <pre class="prettyprint linenums">
 ```{r fig.width=5,fig.height=4 }
 # 定义拥有5个数值的向量
@@ -50,7 +50,7 @@ title(main="Autos", col.main="red", font.main=4)
 ```
 </pre>
 
-3.增一条红线作为tunks线，并直接指定y轴，使其足够适合tunks数据
+3.增一条红线作为trucks线，并直接指定y轴，使其足够适合trucks数据
 <pre class="prettyprint linenums">
 ```{r fig.width=5,fig.height=4 }
 # 定义拥有5个数值的向量
@@ -124,7 +124,7 @@ max_y <- max(autos_data)
 plot_colors <- c("blue", "red", "forestgreen")
 # 定义拥有5个数值的向量
 
-# 设置输出图像的设备
+# 设置输出图的设备
 png(filename="autos.png", height=200, width=210, bg="white")
 
 # 自动求y的范围，并绘制
@@ -152,7 +152,7 @@ title(ylab="Total", col.lab=rgb(0, 0.5, 0))
 # 创建说明
 legend(1, max_y, names(autos_data), cex=0.8, col=plot_colors, pch=21:23, lty=1:3)
 
-# 关闭设备，打印图像
+# 关闭设备，打印图
 dev.off()
 ```
 </pre>
@@ -171,7 +171,7 @@ max_y <- max(autos_data)
 plot_colors <- c(rgb(r=0.0, g=0.0, b=0.9), "red", "forestgreen")
 # 定义拥有5个数值的向量
 
-# 设置输出图像的设备
+# 设置输出图的设备
 #pdf(filename="autos.pdf", height=3.5, width=5)
 
 # 截掉边界空白（下，左，上，右）
@@ -205,7 +205,7 @@ lines(autos_data$suvs, type="l", pch=23, lty=3, lwd=2,
 legend("topleft", names(autos_data), cex=0.8, col=plot_colors, 
        lty=1:3, lwd=2, bty="n")
 
-# 关闭设备，打印图像
+# 关闭设备，打印图
 #dev.off()
 
 # 恢复设置
@@ -221,7 +221,7 @@ par(mar=c(5,4,4,2)+0.1)
 ```{r fig.width=5,fig.height=4 }
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
-# 用默认环境，绘制图像
+# 用默认环境，绘制图
 barplot(cars)
 ```
 </pre>
@@ -233,7 +233,7 @@ barplot(cars)
 setwd("~/R-projecs")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
-# 用默认环境，绘制图像
+# 用默认环境，绘制图
 barplot(autos_data$cars, main="Cars", xlab="Days", ylab="Total",
         names.arg=c("Mon", "Tue", "Wed", "Thu", "Fri"), 
         border="blue", density=c(10,20,30,40,50))
@@ -247,7 +247,7 @@ barplot(autos_data$cars, main="Cars", xlab="Days", ylab="Total",
 setwd("~/R-projecs")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
-# 用默认环境，绘制图像
+# 用默认环境，绘制图
 barplot(as.matrix(autos_data), main="Cars", 
         xlab="Days", ylab="Total",
         beside=TRUE, col=rainbow(5)) 
@@ -267,7 +267,7 @@ autos_data <- read.table("autos.dat", header=T, sep="\t")
 # 开辟说明位置区:放在图区右边
 par(xpd=T, mar=par()$mar+c(0, 0, 0, 4))
 
-# 用默认环境，绘制图像
+# 用默认环境，绘制图
 barplot(t(autos_data), main="Autos", col=heat.colors(3), 
         space=0.1, cex.axis=0.8, las=1,
         names.arg=c("Mon", "Tue", "Wed", "Thu", "Fri"),
@@ -286,7 +286,7 @@ par(mar=c(5,4,4,2)+0.1)
 ```{r fig.width=5,fig.height=4 }
 # 定义拥有5个数值的向量
 suvs <- c(4, 4, 6, 6, 16)
-# 用默认环境，绘制图像
+# 用默认环境，绘制图
 hist(suvs)
 ```
 </pre>
@@ -302,7 +302,7 @@ autos_data <- read.table("autos.dat", header=T, sep="\t")
 autos <- c(autos_data$cars,
            autos_data$trucks,
            autos_data$suvs)
-# 绘制图像
+# 绘制图
 hist(autos, col="lightblue", ylim=c(0, 10))
 ```
 </pre>
@@ -321,7 +321,7 @@ autos <- c(autos_data$cars,
 
 max_num <- max(autos)
 
-# 绘制图像
+# 绘制图
 hist(autos, col=heat.colors(max_num), breaks=max_num,
      xlim=c(0, max_num), right=F, main="Autos Histogram",
      las = 1)
@@ -344,7 +344,7 @@ autos <- c(autos_data$cars,
 max_num <- max(autos)
 
 brk <- c(0, 3, 4, 5, 6, 10, 16)
-# 绘制图像
+# 绘制图
 hist(autos, col=heat.colors(length(brk)), breaks=brk,
      xlim=c(0, max_num), right=F, main="Probability Density",
      las = 1, cex.axis=0.8, freq=F)
@@ -379,7 +379,7 @@ plot(h$counts, log="xy", pch=20, col="blue",
 ```{r fig.width=5,fig.height=4 }
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
-# 用默认环境，绘制图像
+# 用默认环境，绘制图
 pie(cars)
 ```
 </pre>
@@ -389,7 +389,7 @@ pie(cars)
 ```{r fig.width=5,fig.height=4 }
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
-# 绘制图像
+# 绘制图
 pie(cars, main="Cars", col=rainbow(length(cars)),
     labels=c("Mon", "Tue", "Wed", "Thu", "Fri"))
 ```
@@ -405,7 +405,7 @@ colors <- c("white", "grey70", "grey80", "grey40", "black")
 car_labels <- round(cars/sum(cars) * 100, 1)
 car_labels <- paste(car_labels, "%", sep="")
 
-# 绘制图像
+# 绘制图
 pie(cars, main="Cars", col=colors, labels=car_labels, cex=0.9)
 legend(1.5, 0.5, c("Mon", "Tue", "Wed", "Thu", "Fri"), cex=0.9, 
        fill=colors)
