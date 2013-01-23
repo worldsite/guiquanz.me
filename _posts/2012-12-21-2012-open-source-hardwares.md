@@ -40,14 +40,14 @@ pyscmpd是一个音乐播放器守护程序，主要用于Raspberry Pi平台上�
 
 ![](/img/article/raspberrypi/reprap.jpg)
 
-[RepRap](reprap.org)是一种能够打印出塑料实物（以塑料为原材料）的开源桌上3D打印机。由于RepRap可以打印出大部分的自身（塑料）部件, 且RepRap是一个任何人都可以花费自己的时间和精力制作出的玩意——传说中的自我复制机。这就意味着当你自己弄出一个来后，你除了可以用它没事打点有用的玩意，你还可以没事再复制出一个送给你的朋友。
+[RepRap](http://reprap.org)是一种能够打印出塑料实物（以塑料为原材料）的开源桌上3D打印机。由于RepRap可以打印出大部分的自身（塑料）部件, 且RepRap是一个任何人都可以花费自己的时间和精力制作出的玩意——传说中的自我复制机。这就意味着当你自己弄出一个来后，你除了可以用它没事打点有用的玩意，你还可以没事再复制出一个送给你的朋友。
 
 [Reprap.org](http://reprap.org/wiki/Main_Page)是一个wiki社区网站, 意味这你可以编辑大部分网站上的内容, 或还可以, 创建你自己编辑的新内容……
 
 
 ## 3、Arduino依旧火红
 
-[Arduino](http://www.arduino.cc/)，是一个基于开放原始码的软硬体平台，构建于开放原始码simple I/O介面版，并且具有使用类似Java，C语言的Processing/Wiring开发环境。
+[Arduino](http://www.arduino.cc)，是一个基于开放原始码的软硬体平台，构建于开放原始码simple I/O介面版，并且具有使用类似Java，C语言的Processing/Wiring开发环境。
 
 ![](/img/article/raspberrypi/arduino.png)
 

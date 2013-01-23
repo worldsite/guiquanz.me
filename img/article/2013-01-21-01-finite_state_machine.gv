@@ -1,0 +1,18 @@
+digraph finite_state_machine {
+  rankdir=LR;
+  size="8,5"
+
+  node [shape=doublecircle color="red"]; S;
+  node [shape=point];qs
+  node [shape=circle color="green"]; q1
+  node [shape=circle color="red"]; q2
+
+  qs -> S;
+  S  -> q1 [label="a"];
+  S  -> S  [label="a"];
+  q1 -> S  [label="a"];
+  q1 -> q2 [label="b"];
+  q2 -> q1 [label="b"];
+  q2 -> q2 [label="b" color="blue"];
+}
+

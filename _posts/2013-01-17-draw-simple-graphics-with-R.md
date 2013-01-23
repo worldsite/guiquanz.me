@@ -115,7 +115,7 @@ cars  trucks	suvs
 <pre class="prettyprint linenums">
 ```{r fig.width=6,fig.height=5 }
 # 设置工作目录
-setwd("~/R-projecs")
+setwd("~/R-projects")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
 # 计算最大的y值
@@ -162,7 +162,7 @@ dev.off()
 <pre class="prettyprint linenums">
 ```{r fig.width=6,fig.height=5 }
 # 设置工作目录
-setwd("~/R-projecs")
+setwd("~/R-projects")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
 # 计算最大的y值
@@ -230,7 +230,7 @@ barplot(cars)
 <pre class="prettyprint linenums">
 ```{r fig.width=5,fig.height=4 }
 # 设置工作目录
-setwd("~/R-projecs")
+setwd("~/R-projects")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
 # 用默认环境，绘制图
@@ -244,7 +244,7 @@ barplot(autos_data$cars, main="Cars", xlab="Days", ylab="Total",
 <pre class="prettyprint linenums">
 ```{r fig.width=6,fig.height=5 }
 # 设置工作目录
-setwd("~/R-projecs")
+setwd("~/R-projects")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
 # 用默认环境，绘制图
@@ -260,7 +260,7 @@ legend("topleft", c("Mon", "Tue", "Wed", "Thu", "Fri"),
 <pre class="prettyprint linenums">
 ```{r fig.width=6,fig.height=5 }
 # 设置工作目录
-setwd("~/R-projecs")
+setwd("~/R-projects")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
 
@@ -295,7 +295,7 @@ hist(suvs)
 <pre class="prettyprint linenums">
 ```{r fig.width=5,fig.height=4 }
 # 设置工作目录
-setwd("~/R-projecs")
+setwd("~/R-projects")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
 
@@ -311,7 +311,7 @@ hist(autos, col="lightblue", ylim=c(0, 10))
 <pre class="prettyprint linenums">
 ```{r fig.width=5,fig.height=4 }
 # 设置工作目录
-setwd("~/R-projecs")
+setwd("~/R-projects")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
 
@@ -333,7 +333,7 @@ hist(autos, col=heat.colors(max_num), breaks=max_num,
 <pre class="prettyprint linenums">
 ```{r fig.width=5,fig.height=4 }
 # 设置工作目录
-setwd("~/R-projecs")
+setwd("~/R-projects")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
 
@@ -420,7 +420,7 @@ legend(1.5, 0.5, c("Mon", "Tue", "Wed", "Thu", "Fri"), cex=0.9,
 <pre class="prettyprint linenums">
 ```{r fig.width=6,fig.height=6 }
 # 设置工作目录
-setwd("~/R-projecs")
+setwd("~/R-projects")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
 
@@ -432,7 +432,7 @@ dotchart(t(autos_data))
 <pre class="prettyprint linenums">
 ```{r fig.width=6,fig.height=6 }
 # 设置工作目录
-setwd("~/R-projecs")
+setwd("~/R-projects")
 # 读取数据
 autos_data <- read.table("autos.dat", header=T, sep="\t")
 
