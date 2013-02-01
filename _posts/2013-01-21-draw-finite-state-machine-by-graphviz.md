@@ -101,4 +101,6 @@ tags:
 
 2.[The DOT language](http://www.graphviz.org/content/dot-language)
 
+3.[An Introduction to GraphViz](http://www.linuxjournal.com/article/7275?page=0,0)
+
 
