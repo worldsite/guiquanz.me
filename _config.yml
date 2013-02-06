@@ -1,6 +1,6 @@
 markdown:  rdiscount
 permalink: /:year/:month/:day/:title
-title:     GuiQuanZ 分享技术、经验及故事
+title:     冰点
 url:       http://guiquanz.github.com
 exclude:   [ README.md sitemap.xml robots.txt atom.xml ]
 author:    guiquanz
