@@ -10,7 +10,7 @@ tags:
 
 ![](/img/article/nginx/nginx_lua.jpg)
 
-**本文是之前学习 章亦春 的《nginx教程》的一个粗略笔，记建议去看原稿**
+**本文是之前学习 章亦春 的《nginx教程》的一个粗略笔，建议去看原稿。[agentzh的Nginx教程(版本 2012.09.27)](http://agentzh.org/misc/nginx/agentzh-nginx-tutorials-zhcn.html)**
 
 ## 安装ngx_openresty
 

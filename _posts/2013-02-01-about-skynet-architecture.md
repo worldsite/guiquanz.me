@@ -18,7 +18,7 @@ tags:
 
 skynet开源地址：[https://github.com/cloudwu/skynet](https://github.com/cloudwu/skynet)
 
-**这里讨论的是`云风`开源的`基于Lua的游戏框架skyent`，而不是那个`go`写的用于大数据处理的skynet**
+**这里讨论的是`云风`开源的`基于Lua的游戏框架skyent`，而不是那个[go](http://www.golang.org)写的用于大数据处理的[skynet](https://github.com/skynetservices/skynet)**
 
 ## Skynet 设计综述
 

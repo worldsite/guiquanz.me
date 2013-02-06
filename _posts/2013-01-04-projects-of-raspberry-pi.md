@@ -140,6 +140,10 @@ Raspberry Pi无疑是2012年最火爆的开源硬件产品。如果你还不了�
 
 5、[Installing Go on the Raspberry Pi](http://dave.cheney.net/2012/09/25/installing-go-on-the-raspberry-pi)
 
+6、[系列 Pi相关课程](http://learn.adafruit.com)
+
+![](/img/article/raspberrypi/adafruit.png)
+
 
 ## 扩展阅读
 

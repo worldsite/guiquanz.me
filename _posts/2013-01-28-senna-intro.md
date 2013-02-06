@@ -37,3 +37,6 @@ Option -offsettags, which outputs start/end offsets (in the sentence) of each to
 
 2.[Deep Learning for Efficient Discriminative Parsing](http://ronan.collobert.com/pub/matos/2011_parsing_aistats.pdf)
 
+3.[SHOGUN（将军）: A large scale machine learning toolbox](http://www.shogun-toolbox.org/)
+
+

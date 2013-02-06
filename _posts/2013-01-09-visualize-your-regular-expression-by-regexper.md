@@ -9,7 +9,7 @@ tags:
   - RegExper
 ---
 
-## 你是否还再为复杂的正则表达式分析烦恼？
+## 你是否还再为分析、构建复杂的正则表达式烦恼？
 
 ![](/img/article/regexper/demo1.png)
 
