@@ -406,5 +406,8 @@ ab测试工具：批量测试
 * [由Lua 粘合的Nginx生态环境](http://blog.zoomquiet.org/pyblosxom/oss/openresty-intro-2012-03-06-01-13.html)
 * [Nginx模块开发入门](http://blog.codinglabs.org/articles/intro-of-nginx-module-development.html)
 * [Augmenting APIs with Nginx and Lua](http://3scale.github.com/2013/01/09/augment-your-api-without-touching-it/)
+* [Yak Shaving: Adding OAuth Support to Nginx via Lua](http://seatgeek.com/blog/dev/oauth-support-for-nginx-with-lua)
+
+
 
 
