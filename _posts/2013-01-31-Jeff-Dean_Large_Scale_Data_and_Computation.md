@@ -33,4 +33,5 @@ Google是大规模数据及计算方面的权威，其研究成果非常显著�
 * `Google Perf Tools`. [http://code.google.com/p/google-perftools](http://code.google.com/p/google-perftools)
 * `LevelDB`. [http://code.google.com/p/leveldb](http://code.google.com/p/leveldb)
 * See: [http://research.google.com/people/jeff](http://research.google.com/people/jeff) and [http://research.google.com/papers](http://research.google.com/papers)
+* [Just Works的力量——Google科学家Jeff Dean斯坦福大学演讲的启示](http://www.programmer.com.cn/15162)
 

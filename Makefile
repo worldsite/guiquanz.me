@@ -24,9 +24,9 @@ remote-commit: clean
 .PHONY: clean test
 
 clean: 
-	rm -rf ./*.bak ./*~ ./*/*.bak ./*/*~ ./_site ./*/*/*.bak ./*/*/*~
+	find . -name \*~ -type f |xargs rm -f 
+	find . -name \*.bak -type f |xargs rm -f 
 
 test: clean build
 	@echo "Ok\n"
-
 
