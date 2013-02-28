@@ -1,4 +1,4 @@
---- 
+几个人--- 
 layout: post
 title: MySQL基础命令操作
 date: 2013-02-20
@@ -16,9 +16,9 @@ tags:
 
 ## 账户管理
 
-创建 root 账户密码（默认密码为空）： MySQLadmin -u root -password $%\_efg_234_
+创建 root 账户密码（默认密码为空）： mysqladmin -u root -password $%\_efg_234_
 
-修改 root 账户密码： MySQLadmin -u root -p $%_efg_234_ -password _xyz_&*!
+修改 root 账户密码： mysqladmin -u root -p $%\_efg_234_ -password _xyz_&*!
 
 通过执行SQL修改密码（有权限要求）：
 
@@ -29,4 +29,5 @@ tags:
 
 
 ... `待续`
+
 

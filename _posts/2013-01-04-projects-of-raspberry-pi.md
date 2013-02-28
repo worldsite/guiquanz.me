@@ -144,6 +144,8 @@ Raspberry Pi无疑是2012年最火爆的开源硬件产品。如果你还不了�
 
 ![](/img/article/raspberrypi/adafruit.png)
 
+7、[Percona Server on the Raspberry Pi](http://www.mysqlperformanceblog.com/2013/02/25/percona-server-on-the-raspberry-pi-your-own-database-server-for-under-80/)
+
 
 ## 扩展阅读
 
