@@ -695,6 +695,8 @@ Go语言的作者试图将代码的清晰明确作为设计该语言作出所有
 
 （1）、[Golanger Web Framework](https://github.com/golangers/framework);
 
+（2）、[一步一步学习Revel Web开源框架](http://www.cnblogs.com/ztiandan/archive/2013/01/17/2864498.html)；
+
 2、分布式数据处理
 
 （1）、[doozer](https://github.com/ha/doozer);

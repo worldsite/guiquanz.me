@@ -16,7 +16,7 @@ tags:
 * 安装了 Ruby 环境： sudo yum install ruby gem
 * 安装了 keydown 工具： sudo gem install keydown
 * 了解 markdown 语法： [Markdown 语法](http://wowubuntu.com/markdown)
-
+* etao体验工作平台的文章：[Markdown - 引领未来科技写作的博客利器](http://ux.etao.com/posts/620)
 
 ## keydown简介
 

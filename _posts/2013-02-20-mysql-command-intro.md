@@ -1,4 +1,4 @@
-几个人--- 
+--- 
 layout: post
 title: MySQL基础命令操作
 date: 2013-02-20
