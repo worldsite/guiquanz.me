@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: 仅需一行代码，将chrome打造成一个编辑器
+title: 仅一行代码，将chrome打造成一个编辑器
 date: 2013-02-06
 categories:
   - 技术
@@ -8,7 +8,6 @@ tags:
   - chrome
   - javascript
 ---
-
 ## 先看效果吧！
 
 ![](/img/article/chrome/chrome-editor.png)

@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: 使用事件驱动模型实现高效稳定的网络服务器程序
+title: 用事件驱动模型实现高效稳定的网络服务器
 date: 2013-02-10
 categories:
   - 技术
