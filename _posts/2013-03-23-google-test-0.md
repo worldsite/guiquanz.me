@@ -16,7 +16,7 @@ tags:
 
 ## Google Test安装
 
-`Google Test`支持很多种安装模式，此仅介绍几种基于代码库最新版本代码的安装方式。具体，如下：
+`Google Test`支持很多种安装模式，本文仅介绍几种基于代码库最新版本代码的安装方式。具体，如下：
 
 0、下载源代码：依赖于`svn`工具
 
@@ -62,7 +62,7 @@ tags:
     ./sample1_unittest
 
 **注意**： 以上说明中的`${GTEST_DIR}`为Google Test的源码根目录。
-针对文为`~/googletest/googletest/`目录。
+针对本文为`~/googletest/googletest/`目录。
 
 
 ## 测试
@@ -84,6 +84,7 @@ tags:
 
 `${GTEST_DIR}/samples/sample1_unittest.cc`
 
+`${GTEST_DIR}/src/gtest_main.cc`
 
 其中，`sample1.h`的定义，如下：
 
@@ -151,11 +152,11 @@ tags:
     //
     // Don't forget gtest.h, which declares the testing framework.
 
-    #include &lt;limits.h&gt;
+    #include <limits.h>;
     #include "sample1.h"
     #include "gtest/gtest.h"
-
-
+     
+     
     // Step 2. Use the TEST macro to define your tests.
     //
     // TEST has two parameters: the test case name and the test name.
@@ -247,6 +248,64 @@ tags:
       EXPECT_FALSE(IsPrime(6));
       EXPECT_TRUE(IsPrime(23));
     }
+    
+   // Step 3. Call RUN_ALL_TESTS() in main().
+    //
+    // We do this by linking in src/gtest_main.cc file, which consists of
+    // a main() function which calls RUN_ALL_TESTS() for us.
+    //
+    // This runs all the tests you've defined, prints the result, and
+    // returns 0 if successful, or 1 otherwise.
+    //
+    // Did you notice that we didn't register the tests?  The
+    // RUN_ALL_TESTS() macro magically knows about all the tests we
+    // defined.  Isn't this convenient?
+
+上面使用到了 EXPECT\_EQ 这个宏,这个宏用来比较两个数字是否相等。Google 还包装了一系列 EXPECT\_* 和 ASSERT\_*的宏,而EXPECT系列和 ASSERT系列的区别是:
+(1). EXPECT_* 失败时,案例继续往下执行。
+(2). ASSERT\_* 失败时,直接在当前函数中返回。当前函数中 ASSERT_*后面的语句将不会执行。
+
+
+测试的驱动代码在哪里呢？其实就在`${GTEST_DIR}/src/gtest_main.cc`中。具体，如下：
+
+    #include <stdio.h>
+    
+    #include "gtest/gtest.h"
+    
+    GTEST_API_ int main(int argc, char **argv) {
+      printf("Running main() from gtest_main.cc\n");
+      testing::InitGoogleTest(&argc, argv);
+      return RUN_ALL_TESTS();
+    }
+
+
+## 总结
+
+   使用Google Test的主要流程，如下：
+
+* 安装Google Test
+* 编写软件产品代码
+* 为产品代码编写测试代码
+(1). 包含Google Test的头文件。如下：
+     
+    #include "gtest/gtest.h"
+     
+(2). 用`TEST`宏编写测试用例代码。如下：
+     
+    // Tests some trivial cases.
+    TEST(IsPrimeTest, Trivial) {
+      EXPECT_FALSE(IsPrime(0));
+      EXPECT_FALSE(IsPrime(1));
+      EXPECT_TRUE(IsPrime(2));
+      EXPECT_TRUE(IsPrime(3));
+    }
+    
+(3). 编写测试驱动代码（可以使用`${GTEST_DIR}/src/gtest_main.cc`文件）。如下：
+      
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+      
+* 编译、执行测试代码
 
 
 ## 扩展阅读

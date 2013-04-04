@@ -7,6 +7,7 @@ categories:
 tags:
   - 人类消失后的世界 
 ---
+
 [![After People](/img/article/2013-03/16-03.png)](http://v.youku.com/v_show/id_XMzQ0NjAwOTM2.html)
 
 如果有一天人类突然从地球消失，我们身后的世界将会是什么样子？我们的文明会永存吗？…… 这是，一个有趣而且值得探索的话题。
