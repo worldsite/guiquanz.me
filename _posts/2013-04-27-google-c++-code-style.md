@@ -2256,6 +2256,8 @@ OK, enough writing about writing code; the code itself is much more interesting.
 
 * [Google 开源项目风格指南](http://zh-google-styleguide.readthedocs.org/en/latest/google-cpp-styleguide/)
 * [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml)
+* [LLVM Coding Standards](http://llvm.org/docs/CodingStandards.html)
+
 
 ## 祝大家玩的开心
 
