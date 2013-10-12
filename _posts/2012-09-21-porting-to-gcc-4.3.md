@@ -36,7 +36,7 @@ excerpt: <dl class="nr">
 
 #### extern inline语义的变化
 
-当通过`-stdc99`或`-std=gnu99`编译时，改变了extern inline的语义。GCC 4.3遵循ISO C99规范，其中extern inline是和GNU的extern inline是完全不同的东西。以下的代码，如果用-std=c99编译，
+当通过`-std=c99`或`-std=gnu99`编译时，改变了extern inline的语义。GCC 4.3遵循ISO C99规范，其中extern inline是和GNU的extern inline是完全不同的东西。以下的代码，如果用-std=c99编译，
 <pre class="prettyprint linenums">
 extern inline int
 foo()
