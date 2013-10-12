@@ -290,7 +290,7 @@ int main()
 <pre class="prettyprint">
 warning: #warning This file includes at least one deprecated or antiquated header. 
 </pre>
-请酌情使用`C++标准文档 17.4.1.2节`（这个可能会有变化）罗列的`32`个头文件中的一个。比如，用<X>替换原来的<X.h>头文件或用<iostream>替换<iostream.h>。如果需要禁用此告警，请使用`-Wno-deprecated`编译选项。
+请酌情使用`C++标准文档 17.4.1.2节`（这个可能会有变化）罗列的`32`个头文件中的一个。比如，用&lt;X&gt;替换原来的&lt;X.h&gt;头文件或用&lt;iostream&gt;替换&lt;iostream.h&gt;。如果需要禁用此告警，请使用`-Wno-deprecated`编译选项。
 
 用`4.3版本`编译，会报错：
 <pre class="prettyprint">
