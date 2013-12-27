@@ -106,9 +106,6 @@ or
     host  bpsimple  neil  192.168.0.3/32  md5
     
     /usr/local/pgsql/postgresql.conf
-    
-   listen_addresses variable in postgresql.conf, instead of using the now deprecated -i option
-   to postmaster, as follows:
    listen_addresses='localhost'
 
 
@@ -129,55 +126,6 @@ or
 
     /usr/local/pgsql/bin/psql -d template1 #样版库
     
-
-### 开机自启动脚本
-
-#!/bin/sh
-# Script to start and stop PostgreSQL
-SERVER=/usr/local/pgsql/bin/postmaster
-PGCTL=/usr/local/pgsql/bin/pg_ctl
-PGDATA=/usr/local/pgsql/data
-OPTIONS=-i
-LOGFILE=/usr/local/pgsql/data/postmaster.log
-case "$1" in
-start)
-echo -n "Starting PostgreSQL..."
-su -l postgres -c "nohup $SERVER $OPTIONS -D $PGDATA >$LOGFILE 2>&1 &"
-;;
-stop)
-echo -n "Stopping PostgreSQL..."
-su -l postgres -c "$PGCTL -D $PGDATA stop"
-;;
-*)
-echo "Usage: $0 {start|stop}"
-exit 1
-;;
-esac
-exit 0
-
-
------------------------------
-Create an executable script file with this script in it. Call it, for example, MyPostgreSQL. Use
-the chmod command to make it executable, as follows:
-# chmod a+rx MyPostgreSQL
-Then you need to arrange that the script is called to start and stop PostgreSQL when the
-server boots and shuts down:
-MyPostgreSQL start
-MyPostgreSQL stop
-For systems (such as many Linux distributions) that use System V type init scripting, you
-can place the script in the appropriate place. For SuSE Linux, for example, you would place the
-script in /etc/rc.d/init.d/MyPostgreSQL, and make symbolic links to it from the following
-places to automatically start and stop PostgreSQL as the server enters and leaves multiuser mode:
-/etc/rc.d/rc2.d/S25MyPostgreSQL
-/etc/rc.d/rc2.d/K25MyPostgreSQL
-/etc/rc.d/rc3.d/S25MyPostgreSQL
-/etc/rc.d/rc3.d/K25MyPostgreSQL
-
-
-# /usr/local/pgsql/bin/pg_ctl -D /usr/local/pgsql/data stop
-If startup scripts are in place, you can use those, as in this example:
-# /etc/rc.d/init.d/MyPostgreSQL stop
-
 
 ## 扩展阅读
 
