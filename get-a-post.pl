@@ -29,6 +29,10 @@ tags:
 
 ## 祝大家玩的开心
 
+## 编程之道，就在[编程之美]
+
+![编程之美](/img/weixin_qr.jpg)
+
 _EOC_
 
 close $out;
