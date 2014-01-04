@@ -62,7 +62,7 @@ sudo yum install git-core svn
 
 8.安装Rails开发环境：`ruby/rails`
 <pre class="prettyprint linenums">
-sudo yum install ruby ruby-devdel
+sudo yum install ruby ruby-devel
 sudo gem sources -a http://gems.github.com
   # 否则，会报错：
   # ERROR:  While executing gem ... (Zlib::GzipFile::Error)
