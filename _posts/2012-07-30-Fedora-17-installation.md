@@ -102,11 +102,11 @@ sudo yum install openoffic.org-langpack-zh_CN #如果安装时，桌面已是中
 
 （2）安装chrome
 <pre class="prettyprint linenums">
-sodu yum install pax* redhat-lsb*
+sudo yum install pax* redhat-lsb*
   # 否则，会报错：
   # warning: google-chrome-stable_current_x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 7fac5991: 
   # NOKEY error: Failed dependencies:
   # lsb >= 4.0 is needed by google-chrome-stable-20.0.1132.57-145807.x86_64
-sodu yum sudo rpm -ivh google-chrome-stable_current_x86_64.rpm
+sudo yum rpm -ivh google-chrome-stable_current_x86_64.rpm
 </pre>
 
