@@ -48,7 +48,7 @@ sudo yum install glibc-devel.i686
 
 # 克隆代码库
 mkdir ~/rebol && cd ~/rebol
-git clone git://github.com/rebol/r3.git
+git clone git://github.com/rebol/rebol.git r3
 
 # 下载预编译的r3,并改为r3-make
 cd r3/make
