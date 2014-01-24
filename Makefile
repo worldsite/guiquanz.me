@@ -1,4 +1,5 @@
 # Makefile for Linux X86-64 platform
+#
 # Modify it, if needed
 
 msg=
@@ -11,7 +12,7 @@ usage:
 	@echo "                                            "
 
 build:
-	@jekyll --server
+	@jekyll server
 
 commit: clean 
 	git add .	
