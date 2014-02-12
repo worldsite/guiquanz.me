@@ -1,7 +1,7 @@
 markdown:  rdiscount
 permalink: /:year/:month/:day/:title
 title:     句读
-url:       http://www.guiquanz.me
+url:       http://guiquanz.me
 exclude:   [ README.md sitemap.xml robots.txt atom.xml ]
 author:    guiquanz
 email:     nantangguyun@gmail.com
