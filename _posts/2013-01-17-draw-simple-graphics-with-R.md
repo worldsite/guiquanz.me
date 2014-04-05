@@ -29,18 +29,19 @@ tags:
 ## 线状图
 
 1.绘制最简单的点
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
 # 用默认环境，绘制图
 plot(cars)
 ```
-</pre>
 
 2.增加标题，用线连接点，并进行部分着色
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
 # 用蓝色的线，串联各个点
@@ -48,11 +49,11 @@ plot(cars, type="o", col="blue")
 # 增加标题
 title(main="Autos", col.main="red", font.main=4)
 ```
-</pre>
 
 3.增一条红线作为trucks线，并直接指定y轴，使其足够适合trucks数据
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
 trucks <- c(2, 5, 4, 5, 12)
@@ -64,11 +65,11 @@ lines(trucks, type="o", pch=22, lty=2, col="red")
 # 增加标题:红色，黑体（bold/italic）
 title(main="Autos", col.main="red", font.main=4)
 ```
-</pre>
 
 4.修改坐标轴的标签，用max函数计算y轴的值及说明，以自动适应数据的变化
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
 trucks <- c(2, 5, 4, 5, 12)
@@ -98,7 +99,6 @@ title(ylab="Total", col.lab=rgb(0, 0.5, 0))
 # 创建说明
 legend(1, g_range[2], c("cars", "trucks"), cex=0.8, col=c("blue", "red"), pch=21:22, lty=1:2)
 ```
-</pre>
 
 
 5.从文件读取数据，生成png文件
@@ -112,8 +112,9 @@ cars  trucks	suvs
 9     12     16
 </pre>
 
-<pre class="prettyprint linenums">
-```{r fig.width=6,fig.height=5 }
+
+``` cpp 
+
 # 设置工作目录
 setwd("~/R-projects")
 # 读取数据
@@ -155,12 +156,12 @@ legend(1, max_y, names(autos_data), cex=0.8, col=plot_colors, pch=21:23, lty=1:3
 # 关闭设备，打印图
 dev.off()
 ```
-</pre>
 
 6.从文件读取数据（同上），生成PDF文件,同时调整标签45度角，去除图形边界的空白
 
-<pre class="prettyprint linenums">
-```{r fig.width=6,fig.height=5 }
+
+``` cpp 
+
 # 设置工作目录
 setwd("~/R-projects")
 # 读取数据
@@ -211,24 +212,24 @@ legend("topleft", names(autos_data), cex=0.8, col=plot_colors,
 # 恢复设置
 par(mar=c(5,4,4,2)+0.1)
 ```
-</pre>
 
 
 ## 柱状图
 
 1.绘制最简单的柱状图
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
 # 用默认环境，绘制图
 barplot(cars)
 ```
-</pre>
 
 2.从文件读数据，增加标签和蓝色边框及密度斜线
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 设置工作目录
 setwd("~/R-projects")
 # 读取数据
@@ -238,11 +239,11 @@ barplot(autos_data$cars, main="Cars", xlab="Days", ylab="Total",
         names.arg=c("Mon", "Tue", "Wed", "Thu", "Fri"), 
         border="blue", density=c(10,20,30,40,50))
 ```
-</pre>
 
 3.从文件读数据，着色（彩虹色），增加说明
-<pre class="prettyprint linenums">
-```{r fig.width=6,fig.height=5 }
+
+``` cpp 
+
 # 设置工作目录
 setwd("~/R-projects")
 # 读取数据
@@ -254,11 +255,11 @@ barplot(as.matrix(autos_data), main="Cars",
 legend("topleft", c("Mon", "Tue", "Wed", "Thu", "Fri"),
        cex=0.9, bty="n", fill=rainbow(5))
 ```
-</pre>
 
 4.从文件读数据，着色（彩虹色），将说明放在图外面
-<pre class="prettyprint linenums">
-```{r fig.width=6,fig.height=5 }
+
+``` cpp 
+
 # 设置工作目录
 setwd("~/R-projects")
 # 读取数据
@@ -276,24 +277,24 @@ legend(6, 30, names(autos_data),cex=0.9, fill=heat.colors(3))
 # 恢复设置
 par(mar=c(5,4,4,2)+0.1)
 ```
-</pre>
 
 
 ## 直方图
 
 1.绘制最简的直方图
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 定义拥有5个数值的向量
 suvs <- c(4, 4, 6, 6, 16)
 # 用默认环境，绘制图
 hist(suvs)
 ```
-</pre>
 
 2.从文件读取数据，绘制组合了cars、trucks和suvs的直方图
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 设置工作目录
 setwd("~/R-projects")
 # 读取数据
@@ -305,11 +306,11 @@ autos <- c(autos_data$cars,
 # 绘制图
 hist(autos, col="lightblue", ylim=c(0, 10))
 ```
-</pre>
 
 3.从文件读取数据，不再分组数据，同时增加水平y轴
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 设置工作目录
 setwd("~/R-projects")
 # 读取数据
@@ -326,12 +327,12 @@ hist(autos, col=heat.colors(max_num), breaks=max_num,
      xlim=c(0, max_num), right=F, main="Autos Histogram",
      las = 1)
 ```
-</pre>
 
 
 4.从文件读取数据，不再分组数据，同时增加密度的非分割的图
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 设置工作目录
 setwd("~/R-projects")
 # 读取数据
@@ -349,55 +350,55 @@ hist(autos, col=heat.colors(length(brk)), breaks=brk,
      xlim=c(0, max_num), right=F, main="Probability Density",
      las = 1, cex.axis=0.8, freq=F)
 ```
-</pre>
 
 
 5.通过1000个随机值，绘制对数正太分布图（log-normal distribution）
-<pre class="prettyprint linenums">
-```{r fig.width=5, fig.height=4 }
+
+``` cpp 
+
 r <- rlnorm(1000)
 hist(r)
 ```
-</pre>
 
 6.用plot函数显示对数正太分布图
-<pre class="prettyprint linenums">
-```{r fig.width=5, fig.height=4 }
+
+``` cpp 
+
 r <- rlnorm(1000)
 h <- hist(r, plot=F, breaks=c(seq(0, max(r)+1, .1)))
 plot(h$counts, log="xy", pch=20, col="blue",
      main="Log-normal distribution",
      xlab="Value", ylab="Frequency")
 ```
-</pre>
 
 
 ## 饼图
 
 1.绘制最简的饼图
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
 # 用默认环境，绘制图
 pie(cars)
 ```
-</pre>
 
 2.增加头信息，修改颜色，定义标签
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
 # 绘制图
 pie(cars, main="Cars", col=rainbow(length(cars)),
     labels=c("Mon", "Tue", "Wed", "Thu", "Fri"))
 ```
-</pre>
 
 3.修改颜色，定义标签,增加说明
-<pre class="prettyprint linenums">
-```{r fig.width=5,fig.height=4 }
+
+``` cpp 
+
 # 定义拥有5个数值的向量
 cars <- c(1, 3, 6, 4, 9)
 
@@ -411,14 +412,14 @@ legend(1.5, 0.5, c("Mon", "Tue", "Wed", "Thu", "Fri"), cex=0.9,
        fill=colors)
 
 ```
-</pre>
 
 
 ## 点图
 
 1.绘制最简的点图
-<pre class="prettyprint linenums">
-```{r fig.width=6,fig.height=6 }
+
+``` cpp 
+
 # 设置工作目录
 setwd("~/R-projects")
 # 读取数据
@@ -426,11 +427,11 @@ autos_data <- read.table("autos.dat", header=T, sep="\t")
 
 dotchart(t(autos_data))
 ```
-</pre>
 
 2.绘制附加着色的点图
-<pre class="prettyprint linenums">
-```{r fig.width=6,fig.height=6 }
+
+``` cpp 
+
 # 设置工作目录
 setwd("~/R-projects")
 # 读取数据
@@ -439,12 +440,12 @@ autos_data <- read.table("autos.dat", header=T, sep="\t")
 dotchart(t(autos_data), color=c("red", "blue", "darkgreen"),
          main="Dochart for Autos", cex=0.9)
 ```
-</pre>
 
 
 ## 杂项
-<pre class="prettyprint linenums">
-```{r fig.width=6,fig.height=6 }
+
+``` cpp 
+
 plot(1, 1, xlim=c(1,5.5), ylim=c(0,7), type="n", ann=FALSE)
 
 # Plot digits 0-4 with increasing size and color
@@ -470,6 +471,5 @@ text((1:5)+0.4, rep(2,5), cex=0.6, (15:19))
 points((1:6)*0.8+0.2, rep(1,6), cex=2, pch=(20:25))
 text((1:6)*0.8+0.5, rep(1,6), cex=0.6, (20:25))
 ```
-</pre>
 
 

@@ -8,4 +8,8 @@ email:     nantangguyun@gmail.com
 pygments:  true
 paginate:  3
 auto:      false
+noToc:     false
+contentsLabel: 目录
+
+
 

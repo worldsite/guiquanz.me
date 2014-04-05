@@ -183,11 +183,13 @@ Ok, 这是不是太困难:
 
 ## 安装LuaJIT
 
+```bash linenos
+
     mkdir -p ~/lua-ffi_in_action && cd ~/lua-ffi_in_action
     git clone http://luajit.org/git/luajit-2.0.git
     cd luajit-2.0
     make && make install
-
+```
 
 ## 祝大家玩的开心
 

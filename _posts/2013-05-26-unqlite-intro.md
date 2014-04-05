@@ -47,8 +47,9 @@ UnQLite的`结构化数据存储`是通过`文档存储接口`表达给客户端
 
 下面是一个简单的C程序，用于演示如何使用UnQLite的Key/Value存储C/C++接口：
 
-<pre class="prettyprint linenums">
-  #include &lt;unqlite.h&gt;
+{% highlight c linenos %}
+
+  #include <unqlite.h>
   int i,rc;
   unqlite *pDb;
   
@@ -115,7 +116,7 @@ UnQLite的`结构化数据存储`是通过`文档存储接口`表达给客户端
   
   //Auto-commit the transaction and close our handle.
   unqlite_close(pDb);
-</pre>
+{% endhighlight %}
 
 [获取一份C代码](http://unqlite.org/db/unqlite_kv_intro.c)
 
@@ -132,8 +133,9 @@ UnQLite的`结构化数据存储`是通过`文档存储接口`表达给客户端
 
 在KV存储下，键和值都被视为简单的字节数组，你甚至可以插入外部文件，如XML或任何你需要的文件，到你的UnQLite数据库，然后通过一个 O(1)查询，将其（如UnQLite数据库）放到一个Tar存档中。以下是一个示例代码片段：
 
-<pre class="prettyprint linenums">
-  #include &lt;unqlite.h&gt;
+{% highlight c linenos %}
+
+  #include <unqlite.h>
   // Usage example: ./unqlite_tar config.xml license.txt audio.wav splash.jpeg,...
   void *pMap;
   unqlite_int64 iSize;
@@ -160,11 +162,10 @@ UnQLite的`结构化数据存储`是通过`文档存储接口`表达给客户端
     // Discard the memory view;
     unqlite_util_release_mmaped_file(pMap,iSize);
   }
-     
-    
+
   //Auto-commit the transaction and close our handle
   unqlite_close(pDb);
-</pre>
+{% endhighlight %}
 
 [获取一份C代码](http://unqlite.org/db/unqlite_tar.c)
 
@@ -181,8 +182,9 @@ UnQLite的`结构化数据存储`是通过`文档存储接口`表达给客户端
 
 下面是一个简单的C程序，演示了如何使用游标。这个程序，将从最后一条记录到第一条，遍历整个数据库。
 
-<pre class="prettyprint linenums">
-  #include &lt;unqlite.h&gt;
+{% highlight c linenos %}
+
+  #include <unqlite.h>
   
   int rc;
   unqlite *pDb;
@@ -225,7 +227,7 @@ UnQLite的`结构化数据存储`是通过`文档存储接口`表达给客户端
   
   //Auto-commit the transaction and close our handle
   unqlite_close(pDb);
-</pre>
+{% endhighlight %}
 
 [获取一份C代码](http://unqlite.org/db/unqlite_csr_intro.c)
 
@@ -234,7 +236,8 @@ UnQLite的`结构化数据存储`是通过`文档存储接口`表达给客户端
 
 UnQLite结构化数据存储，是通过文档存储接口表达给客户端的。文档存储是用来在数据库中存储JSON文档（如，对象、数组、字符串等）的，是通过`Jx9`编程语言支撑/实现的。下面是一个Jx9脚本，通过后面的C程序编译，演示如何使用UnQLite的文档存储接口。
 
-<pre class="prettyprint linenums">
+{% highlight c linenos %}
+
 /* Create the collection 'users'  */
 if( !db_exists('users') ){
     /* Try to create it */
@@ -285,12 +288,13 @@ if( !$rc ){
 print "Total number of stored records: ",db_total_records('users'),JX9_EOL;
 
 //Fetch data using db_fetch_all(), db_fetch_by_id() and db_fetch().
-</pre>
+{% endhighlight %}
 
 现在，编译和执行以上定义的这个Jx9脚本的C程序，如下：
 
-<pre class="prettyprint linenums">
-#include &lt;unqlite.h&gt;
+{% highlight c linenos %}
+
+#include <unqlite.h>
 
 int rc;
 unqlite *pDb;
@@ -331,7 +335,7 @@ if( rc != UNQLITE_OK ){
 unqlite_vm_release(pVm);
 
 unqlite_close(pDb);
-</pre>
+{% endhighlight %}
 
 [获取一份C代码](http://unqlite.org/db/unqlite_doc_intro.c)
 

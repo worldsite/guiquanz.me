@@ -15,6 +15,7 @@ GEM
     maruku (0.6.0)
       syntax (>= 1.0.0)
     pygmentize (0.0.2)
+    nokogiri (>= 1.5.10)
     syntax (1.0.0)
 
 PLATFORMS
@@ -24,3 +25,5 @@ DEPENDENCIES
   RedCloth
   jekyll
   pygmentize
+  nokogiri
+

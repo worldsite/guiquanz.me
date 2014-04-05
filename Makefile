@@ -1,5 +1,5 @@
-# Makefile for Linux X86-64 platform
 #
+# Makefile for Linux X86-64 platform
 # Modify it, if needed
 
 msg=

@@ -1,0 +1,27 @@
+
+digraph helloworld {
+
+node [shape="record"]
+edge [style="dashed"]
+
+h;
+e;
+l [style="filled", color="red", fillcolor="green"];
+l;
+o;
+    subgraph cluster_world {
+        label="world";
+        bgcolor="blue";
+
+        w;
+        o [style="filled", color="green", fillcolor="red"];
+        r;
+        l;
+        d;
+    }
+
+h -> e -> l -> l -> o [color="blue"];
+o -> w -> o -> r -> l -> d;
+
+}
+

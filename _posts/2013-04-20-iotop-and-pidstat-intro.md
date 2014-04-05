@@ -21,11 +21,13 @@ pidstat示例：
 
 ## 软件安装及使用
 
+<pre class="prettyprint linenums">
     sudo yum -y install iotop
     sudo iotop
 
     sudo yum -y install pidstat
     pidstat
+</pre>
 
 **前提**： 仅适用于 Linux 6.2.23之后的内核版本。
 

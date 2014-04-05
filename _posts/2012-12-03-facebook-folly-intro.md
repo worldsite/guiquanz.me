@@ -40,7 +40,8 @@ Folly在github的地址，如下：
     - 如果安装顺序反了，执行 make check 时 VLOG 会报错；
     - 需要使用最新的版本，否则可能会出现API版本不兼容问题。 作者使用yum安装gflags和google-glog时，就出现此问题。
 
-<pre class="prettyprint linenums">
+```cpp
+
 #安装依赖工具
 sudo yum install gcc gcc-c++ autoconf autoconf-archive automake libtool
 sudo yum install boost-devel scons
@@ -86,15 +87,17 @@ LDFLAGS=-L../../double-conversion CPPFLAGS=-I../../double-conversion/src ./confi
 make 
 sudo make install
 
-</pre>
+```
 
 2、执行folly回归测试
 
 安装好folly库之后，可以通过以下方式执行其回归测试：
-<pre class="prettyprint linenums">
+
+```cpp
+
 cd ~/folly/folly/folly
 make check
-</pre>
+```
 
 3、自己动手，写个测试程序
 
@@ -102,16 +105,18 @@ make check
 
 （1）、编写测试程序
 
-<pre class="prettyprint linenums">
+```cpp
+
 mkdir -p ~/folly/folly/examples
 cd ~/folly/folly/examples
-</pre>
+```
 
-<pre class="prettyprint linenums">
-cat &lt;&lt;EOF > fbstring_test.cc
-#include &lt;folly/FBString.h&gt;
-#include &lt;folly/Conv.h&gt;
-#include &lt;iostream&gt;
+```cpp
+
+cat <<EOF > fbstring_test.cc
+#include <folly/FBString.h>
+#include <folly/Conv.h>
+#include <iostream>
 
 using namespace folly;
 using namespace std;
@@ -127,10 +132,11 @@ main(void)
   return 0;
 }
 EOF
-</pre>
+```
 
-<pre class="prettyprint linenums">
-cat &lt;&lt;EOF > Makefile
+```cpp
+
+cat <<EOF > Makefile
 # Makefile for Fedora platform
 # Modify it, if needed
 
@@ -173,11 +179,12 @@ clean:
 	rm -f $(TESTS) *.o *~
 
 EOF
-</pre>
+```
 
 （2）、编译、执行程序
 
-<pre class="prettyprint linenums">
+```cpp
+
 make test
 
 命令输出，如下：
@@ -186,7 +193,7 @@ g++ -o fbstring_test fbstring_test.o -L../../double-conversion
 for t in fbstring_test; do echo "**** Runing $t"; ./$t || exit 1; done
 **** Runing fbstring_test
 Hello Facebook Folly fbstring.
-</pre>
+```
 
 
 ## 扩展阅读

@@ -1,0 +1,21 @@
+
+digraph helloworld {
+
+node [shape="record"]
+edge [style="dashed"]
+
+h;
+e;
+l;
+l;
+o;
+w;
+o;
+r;
+l;
+d;
+
+h -> e -> l -> l -> o -> w -> o -> r -> l -> d;
+
+}
+

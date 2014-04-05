@@ -37,11 +37,13 @@ excerpt: <dl class="nr">
 #### extern inline语义的变化
 
 当通过`-std=c99`或`-std=gnu99`编译时，改变了extern inline的语义。GCC 4.3遵循ISO C99规范，其中extern inline是和GNU的extern inline是完全不同的东西。以下的代码，如果用-std=c99编译，
-<pre class="prettyprint linenums">
+
+```cpp
+
 extern inline int
 foo()
 { return 5; }
-</pre>
+```
 
 其结果是“foo的一个函数定义，将在随后的对象文件中生成”，然而之前版本这里结果是none。如果用C99的方言（如，gnu99）,编译使用此扩展的文件，会报以下的错误：
 
@@ -59,11 +61,13 @@ foo()
 (2). 使用`-fgnu89-inline`选项编译。
 
 预处理之后的代码，如下：
-<pre class="prettyprint linenums">
+
+```cpp
+
 extern inline __attribute__((__gnu_inline__)) int
 foo()
 { return 5; }
-</pre>
+```
 
 #### 新增的告警
 
@@ -276,34 +280,42 @@ foo()
 可以进一步了解[其他](http://gcc.gnu.org/onlinedocs/libstdc++/manual/bk01pt01ch03s02.html)相关的头文件。
 
 *应用示例*
-<pre class="prettyprint linenums">
-#include &lt;iostream.h&gt;
+
+```cpp
+
+#include <iostream.h>
 
 int main()
 {
   cout << "I'm too old" << endl;
   return 0;
 }
-</pre>
+```
 
 通过`4.3之前的GCC`版本编译，会产生如下告警：
-<pre class="prettyprint">
+
+```cpp
+
 warning: #warning This file includes at least one deprecated or antiquated header. 
-</pre>
+```
 请酌情使用`C++标准文档 17.4.1.2节`（这个可能会有变化）罗列的`32`个头文件中的一个。比如，用&lt;X&gt;替换原来的&lt;X.h&gt;头文件或用&lt;iostream&gt;替换&lt;iostream.h&gt;。如果需要禁用此告警，请使用`-Wno-deprecated`编译选项。
 
 用`4.3版本`编译，会报错：
-<pre class="prettyprint">
+
+```cpp
+
 error: iostream.h: No such file or directory
 In function 'int main()':
 6: error: 'cout' was not declared in this scope
 6: error: 'endl' was not declared in this scope
-</pre>
+```
 
 修正办法，如下：
 
-<pre class="prettyprint linenums">
-#include &lt;iostream&gt;
+
+```cpp
+
+#include <iostream>
 using namespace std;
 
 int main()
@@ -311,96 +323,120 @@ int main()
   cout << "I work again" << endl;
   return 0;
 }
-</pre>
+```
 
 #### 名字查询变更
 
 GCC默认不再支持以下代码：
-<pre class="prettyprint linenums">
-template &lt;class _Tp&gt; class auto_ptr {};
-template &lt;class _Tp&gt;
+
+```cpp
+
+template <class _Tp> class auto_ptr {};
+template <class _Tp>
 struct counted_ptr
 {
   auto_ptr<_Tp> auto_ptr();
 };
-</pre>
+```
 这个代码会产生一个错误诊断：
 
-<pre class="prettyprint">
+
+```cpp
+
 error: declaration of 'auto_ptr<_Tp> counted_ptr<_Tp>::auto_ptr()'
 error: changes meaning of 'auto_ptr' from 'class auto_ptr<_Tp>'
-</pre>
+```
 
 需要限定对auto\_ptr结构的引用或修改成员函数名去除二义性。如，
-<pre class="prettyprint linenums">
-template &lt;class _Tp&gt; class auto_ptr {};
-template &lt;class _Tp&gt;
+
+```cpp
+
+template <class _Tp> class auto_ptr {};
+template <class _Tp>
 struct counted_ptr
 {
   ::auto_ptr<_Tp> auto_ptr();
 };
-</pre>
+```
 
 另外，在代码修复之前可以用`-fpermissive`选项，将错误转为告警（作为变通）。注意，此时有些情况下“名字查询”将采用非标准的配置。
 
 #### 冗余函数参数
 
 C/C++中的冗余函数都将统一当作“错误”处理。如，
-<pre class="prettyprint linenums">
+
+```cpp
+
 void foo(int w, int w);
-</pre>
+```
 
 在新版本下，会报如下的错误：
-<pre class="prettyprint">
+
+```cpp
+
 error: multiple parameters named 'w'
-</pre>
+```
 通过修改一个参数，令命名唯一，即可解决此问题。如，
-<pre class="prettyprint linenums">
+
+```cpp
+
 void foo(int w, int w2);
-</pre>
+```
 
 #### 更加严格的main函数签名
 
 GCC 4.3强制必须保证`main`函数两个参数中，第一个参数为`int`。针对以下代码：
-<pre class="prettyprint linenums">
+
+```cpp
+
 int main(unsigned int m, char** c) 
 { return 0; }
-</pre>
+```
 
 会报错：
-<pre class="prettyprint linenums">
+
+```cpp
+
 error: first argument of 'int main(unsigned int, char**)' should be 'int'
-</pre>
+```
 
 将第一个参数由`unsigned int`改为`int`，方能修正错误：
-<pre class="prettyprint linenums">
+
+```cpp
+
 int main(int m, char** c) 
 { return 0; }
-</pre>
+```
 
 #### 明确的template特殊化，不能拥有存储class
 
 殊化的模板（template）不能明确指定存储class，以及相同的存储作为主template。这是根据`ISO C++ Core Defect Report 605`修改的行为。具体，如下：
 
-<pre class="prettyprint linenums">
-template&lt;typename T&gt;
+
+```cpp
+
+template< typename T>
   static void foo();
 
 template<>
   static void foo<void>();  
-</pre>
+```
 
 编译代码会报，以下的错误：
-<pre class="prettyprint">
+
+```cpp
+
 error: explicit template specialization cannot have a storage class
-</pre>
+```
 
 `外部说明符（指示符）`也存在此问题。修正方法：去掉“特殊化”上的“存储说明符”即可。具体，如下：
-<pre class="prettyprint linenums">
-template&lt;typename T&gt;
+
+```cpp
+
+template< typename T>
   static void foo();
 
 template<>
   void foo<void>();
-</pre>
+```
 

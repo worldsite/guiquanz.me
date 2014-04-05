@@ -9,16 +9,18 @@ tags:
 ---
 ## powertop
 
-![](/img/article/2013-04/13-01.png)
+[![](/img/article/2013-04/13-01.png)](https://github.com/fenrus75/powertop)
 
- `powertop`，是`Intel`公司发布的一块针对Linux平台笔记本电脑节源检测工具。可以有助于用户找出那些耗电量大的程序，通过修复或者关闭那些应用程序或进程，为用户节省电源。
+ [powertop](https://github.com/fenrus75/powertop)，是`Intel`公司发布的一块针对Linux平台笔记本电脑节源检测工具。可以有助于用户找出那些耗电量大的程序，通过修复或者关闭那些应用程序或进程，为用户节省电源。
 
 
 ## 软件安装及运行
 
+<pre class="prettyprint linenums">
     sudo yum install -y powertop
     sudo powertop
-     
+</pre>
+
 
 ## 祝大家玩的开心
 
