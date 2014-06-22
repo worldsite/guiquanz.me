@@ -177,8 +177,8 @@ Ok, 这是不是太困难:
 * [Lua String Templates](https://github.com/weshoke/Lust)
 * [Standalone FFI library for calling C functions from lua](https://github.com/jmckaskill/luaffi)
 * [Lua游戏开发实践指南](http://product.china-pub.com/3020698)
-* [	Lua程序设计:第2版](http://product.china-pub.com/40562)
-* [	Beginning Lua Programming](http://product.china-pub.com/2021989)
+* [Lua程序设计:第2版](http://product.china-pub.com/40562)
+* [Beginning Lua Programming](http://product.china-pub.com/2021989)
 
 
 ## 安装LuaJIT

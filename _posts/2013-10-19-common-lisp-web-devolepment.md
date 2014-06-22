@@ -7,10 +7,19 @@ categories:
 tags:
   - common-lisp
 ---
+### 开发环境
+
+* [clozure ccl](http://ccl.clozure.com/)
+* `Steel Bank Common Lisp`[sbcl](http://www.sbcl.org/)
+* [SLIME](http://common-lisp.net/project/slime/)
+
+### 包管理
+
+* [quicklisp](http://www.quicklisp.org/beta/)
+
 ### Web/html组件
 
 * `RESTAS`：[http://restas.lisper.ru/en/installation.html](http://restas.lisper.ru/en/installation.html)
-* `Steel Bank Common Lisp`（SBCL）: [http://www.sbcl.org/](http://www.sbcl.org/)
 
 ### Database
 
@@ -28,6 +37,9 @@ tags:
 
 
 ## 扩展阅读
+
+* [on lisp中文版本](http://jaist.dl.sourceforge.net/project/onlisp-cn/onlisp-cn_20140217.pdf)
+* [ANSI Common Lisp 中文版本](http://acl.readthedocs.org/en/latest/zhCN/index.html)
 
 
 ## 祝大家玩的开心

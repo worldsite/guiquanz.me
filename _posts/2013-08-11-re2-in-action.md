@@ -44,11 +44,14 @@ RE2支持`子匹配萃取`（submatch extraction），但是不支持`反向引�
 
 下载代码，并进行安装：
 
+```bash
+
     hg clone http://re2.googlecode.com/hg re2
     cd re2
     make test
     make testinstall
     sudo make install
+```
 
 __在BSD系统, 使用`gmake`替换`make`__
 
@@ -233,7 +236,7 @@ __以下照片内容，源自“sregex: matching Perl 5 regexes on data streams�
 
 ## RE2的各种包装
 
-An 	`Inferno` wrapper is at [http://code.google.com/p/inferno-re2/](http://code.google.com/p/inferno-re2/).
+An `Inferno` wrapper is at [http://code.google.com/p/inferno-re2/](http://code.google.com/p/inferno-re2/).
 
 A `Python` wrapper is at [http://github.com/facebook/pyre2/](http://github.com/facebook/pyre2/).
 
