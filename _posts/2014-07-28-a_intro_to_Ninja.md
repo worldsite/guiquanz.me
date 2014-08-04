@@ -670,7 +670,7 @@ Ninja是一块非常好的构建工具，其实也是一个特殊的编译器，
 ## 扩展阅读
 
 * [ninja manual](http://martine.github.io/ninja/manual.html)
-* [ninja源码裤](https://github.com/martine/ninja)
+* [ninja源码库](https://github.com/martine/ninja)
 * [本文作者修改的分支](https://github.com/guiquanz/ninja)
 
 
