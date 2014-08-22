@@ -37,14 +37,17 @@ i@home:/> `lslpp -l |grep iconv`
 
 （安装了3个，通过-L指定一个适合的路径即可。可以配合使用locale、whereis等确定路径）
 
-如果，没有安装。可以到[AIX Open Source Packages](http://www.perzl.org/aix/)网站，
-搜索并下载对应的rpm包，然后安装即可。
+如果，没有安装。可以到[AIX Open Source Packages](http://www.perzl.org/aix/)或者[Large Open Source Software Archive for AIX](http://bullfreeware.com/search.php?package=gcc)网站，搜索并下载对应的rpm包，然后安装即可。
 
 （BTW: 针对 HO-UX 平台，开源软件移植中心为:
 [Welcome to the HP-UX Porting and Archive Centre](http://hpux.connect.org.uk/)）
 
 
 ## 扩展阅读
+
+* [AIX Open Source Packages](http://www.perzl.org/aix/)
+* [Large Open Source Software Archive for AIX](http://bullfreeware.com/search.php?package=gcc)
+* [Welcome to the HP-UX Porting and Archive Centre](http://hpux.connect.org.uk/)
 
 
 ## 祝大家玩的开心
