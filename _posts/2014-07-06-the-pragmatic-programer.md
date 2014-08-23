@@ -2,8 +2,9 @@
 layout: post
 title: 好书推荐：程序员修炼之道
 date: 2014-07-06
+bookview: true
 categories:
-  - 技术
+  - 书品
 tags:
   - 好书
 ---

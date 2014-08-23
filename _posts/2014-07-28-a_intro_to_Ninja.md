@@ -9,7 +9,7 @@ tags:
 ---
 ## 缘由
 
-经过上次对[chromium](http://code.google.com/p/chromium)核心代码的初步了解之后，我转头去研究了一番[ninja](https://github.com/martine/ninja)，并对其进行了一些改造（爱折腾的，都是小NB）。今天就来简单介绍一下ninja及其使用。(BTW: 细节的内容，大家阅读[ninja 的手册](http://martine.github.io/ninja/manual.html)就好了，我这里不会关注。)
+经过上次对[chromium](http://code.google.com/p/chromium)核心代码的初步了解之后，我转头去研究了一番[ninja](https://github.com/martine/ninja)，并对其[进行了一些改造](https://github.com/guiquanz/ninja)（爱折腾的，都是小NB）。今天就来简单介绍一下ninja及其使用。(BTW: 细节的内容，大家阅读[ninja 的手册](http://martine.github.io/ninja/manual.html)就好了，我这里不会关注。)
 
 [ninja](https://github.com/martine/ninja)是__一个专注于速度的__小型`构建系统`（Ninja is a small build system with a focus on speed）。ninja是其作者为了解决`chromium代码编译慢`这个问题（具体一点，就是发生在将Chrome移植到非Windows平台过程中的事情。欲知详情，请阅读[Ninja, a new build system](http://neugierig.org/software/chromium/notes/2011/02/ninja.html)）而诞生的。其设计受到[the tup build system](http://gittup.org/tup/)和[redo](https://github.com/apenwarr/redo)的启发。ninja核心是由C++编写的，同时有一部分辅助功能由`python`和`shell`实现。
 
