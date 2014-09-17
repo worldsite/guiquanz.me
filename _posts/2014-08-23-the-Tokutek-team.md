@@ -33,7 +33,13 @@ tags:
 
 ## 扩展阅读
 
+* [A Comparison of Log-Structured Merge (LSM) and Fractal Tree Indexing](http://forms.tokutek.com/acton/attachment/6118/f-0039/1/-/-/-/-/lsm-vs-fractal.pdf)
 * [Ark: A Real-World Consensus Implementation](http://arxiv.org/pdf/1407.4765v1)
+* [Introducing Ark: A Consensus Algorithm For TokuMX and MongoDB](http://www.tokutek.com/2014/07/introducing-ark-a-consensus-algorithm-for-tokumx-and-mongodb/)
+* [Explaining Ark Part 1: The Basics](http://www.tokutek.com/2014/07/explaining-ark-part-1-the-basics/)
+* [Explaining Ark Part 2: How Elections and Failover Currently Work](http://www.tokutek.com/2014/07/explaining-ark-part-2-how-elections-and-failover-currently-work/)
+* [Explaining Ark Part 3: Why Data May Be Lost on a Failover](http://www.tokutek.com/2014/07/explaining-ark-part-3-why-data-may-be-lost-on-a-failover/)
+* [Explaining Ark Part 4: Fixing Majority Write Concern](http://www.tokutek.com/2014/08/explaining-ark-part-4-fixing-majority-write-concern/)
 * [Data Structures and Algorithms for Big Databases](http://www.tokutek.com/wp-content/uploads/2012/09/BenderKuszmaul-tutorial-xldb12.pdf)
 * [The Raft Consensus Algorithm](http://raft-consensus.github.io/)
 * [Raft user study](https://ramcloud.stanford.edu/~ongaro/userstudy/)

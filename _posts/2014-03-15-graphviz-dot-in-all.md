@@ -188,9 +188,16 @@ dot -Tpng finite_state_machine.gv -o finite_state_machine.png
 
 ## 扩展阅读
 
-[巧用Graphviz绘制状态机图](http://guiquanz.me/2013/01/21/draw-finite-state-machine-by-graphviz/)
+* [巧用Graphviz绘制状态机图](http://guiquanz.me/2013/01/21/draw-finite-state-machine-by-graphviz/)
+* [巧用Graphviz和pvtrace等工具可视化C函数调用](http://guiquanz.me/2012/10/15/linux_c_call_trace/)
+* [UML Use Case Diagrams & Graphviz](http://martin.elwin.com/blog/2008/05/uml-use-case-diagrams-graphviz/)
+* [使用graphviz绘制流程图](http://icodeit.org/2012/01/%E4%BD%BF%E7%94%A8graphviz%E7%BB%98%E5%88%B6%E6%B5%81%E7%A8%8B%E5%9B%BE/)
+* [使用 Graphviz 生成自动化系统图](http://www.ibm.com/developerworks/cn/aix/library/au-aix-graphviz/)
+* [Graphviz - Graph Visualization Software](http://www.graphviz.org/)
+* [UML Diagrams Using Graphviz Dot](http://www.ffnn.nl/pages/articles/media/uml-diagrams-using-graphviz-dot.php)
+* [Drawing graphs with dot](http://www.graphviz.org/pdf/dotguide.pdf)
+* [staruml](http://staruml.io/)
 
-[巧用Graphviz和pvtrace等工具可视化C函数调用](http://guiquanz.me/2012/10/15/linux_c_call_trace/)
 
 ## 祝大家玩的开心
 
