@@ -21,6 +21,20 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [Is Parallel Programming Hard, And, If So, What Can You Do About It?](http://kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook-1c-e1p.pdf)
 * [What Every Programmer Should Know About Memory](http://www.akkadia.org/drepper/cpumemory.pdf)
 
+* [Learn You Some Erlang for great good](http://learnyousomeerlang.com/)
+* [Stuff Goes Bad - ERLANG IN ANGER](http://www.erlang-in-anger.com/)
+
+* [Real World Ocaml](https://realworldocaml.org/)
+
+* [The Performance of Open Source Applications](http://aosabook.org/en/index.html)
+* [The Architecture of Open Source Applications I/II](http://aosabook.org/en/index.html)
+
+* [How to Design Programs](http://htdp.org/)
+* [The Scheme Programming Language - Fourth Edition - R. Kent Dybvig](http://www.scheme.com/tspl4/)
+* [Common Lisp the Language, 2nd Edition](https://www.cs.cmu.edu/Groups/AI/html/cltl/clm/clm.html)
+* [ANSI Common Lisp 中文版](http://acl.readthedocs.org/en/latest/)
+* [On Lisp](http://www.paulgraham.com/onlisp.html)
+
 
 ## 扩展阅读
 
