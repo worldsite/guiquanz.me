@@ -35,6 +35,10 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [ANSI Common Lisp 中文版](http://acl.readthedocs.org/en/latest/)
 * [On Lisp](http://www.paulgraham.com/onlisp.html)
 
+* [Google - Mathematics for Computer Science](http://vdisk.weibo.com/s/zvn9RXCUb8s02)
+* [A Course in Machine Learning](http://ciml.info/dl/v0_9/ciml-v0_9-all.pdf) 此为0.9版本，不断更新中
+
+
 
 ## 扩展阅读
 

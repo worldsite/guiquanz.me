@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Oracle数据库基础操作
+title: Oracle基础操作
 date: 2013-04-14
 categories:
   - 技术
 tags:
   - Oracle
 ---
-## 创建建库
+## 创建用户，即建立表空间
 
 <pre class="prettyprint linenums">
 i@home> $ sqlplus "/as sysdba"
@@ -24,7 +24,7 @@ i@home> mkdir -p ~/dbport && cd ~/dbport
 i@home> exp lisi/lisi@oracle_1 file=lisi.dmp rows=n log=exp.log
 </pre>
 
-__如果，还需要导表的数据，只需要置rows=y即可__
+__如果还需要导表的数据，只需要设置rows=y即可__
 
 
 ## 将表结构导入到新建的库中
@@ -45,7 +45,7 @@ SQL> @ install.sql
 SQL> start install.sql
 </pre>
 
-__如果，没有指定文件的绝对路径。默认路径为，当前操作目录。__
+__如果没有指定文件的绝对路径。默认路径为当前操作目录。__
 
 
 ## 客户端环境变量配置
