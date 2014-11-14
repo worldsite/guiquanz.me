@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 几本非常棒的免费电子书
+title: 精品免费计算机图书
 date: 2014-08-31
 categories:
   - 技术
@@ -37,7 +37,12 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 
 * [Google - Mathematics for Computer Science](http://vdisk.weibo.com/s/zvn9RXCUb8s02)
 * [A Course in Machine Learning](http://ciml.info/dl/v0_9/ciml-v0_9-all.pdf) 此为0.9版本，不断更新中
+* [Foundations of Data Science](https://research.microsoft.com/en-US/people/kannan/book-no-solutions-aug-21-2014.pdf)
+* [Pro Git](https://progit2.s3.amazonaws.com/en/2014-10-26-3966d/progit-en.48.pdf)
 
+* [Social Media Mining](http://dmml.asu.edu/smm/SMM.pdf)
+* [Information Theory, Inference, and Learning Algorithms](http://www.inference.phy.cam.ac.uk/itprnn/book.pdf)
+* [Erlang In Anger](http://zhongwencool.gitbooks.io/erlang_in_anger/)
 
 
 ## 扩展阅读

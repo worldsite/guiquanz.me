@@ -9,7 +9,7 @@ tags:
 ---
 ## snavigator
 
-`snavigator`[http://sourceforge.net/projects/sourcenav/](http://sourceforge.net/projects/sourcenav/)是一块非常不错的开源软件，针对Linux平台c/C++代码阅读导航，可以与`Sourece Insight`媲美。只可惜sourceforge上的项目已经没更新了，好在代码还能用，网上能找到6.0的版本(sourcenav-6.0)。界面使用tk（tcl的图形编程框架）开发，虽不够华丽，也还不错，不妨一试。
+`snavigator`[http://sourceforge.net/projects/sourcenav/](http://sourceforge.net/projects/sourcenav/)是一块非常不错的开源软件，针对Linux平台C/C++代码阅读导航，可以与`Sourece Insight`媲美。只可惜sourceforge上的项目已经没更新了(__NG的分支，目前还有人在维护。最新一次更新2014-04-20__)，好在代码还能用，网上能找到6.0的版本(sourcenav-6.0)。界面使用tk（tcl的图形编程框架）开发，虽不够华丽，也还不错，不妨一试。
 
 [![sourcena](/img/article/2014-03/09-01_snavigator.png)](http://sourceforge.net/projects/sourcenav/)
 

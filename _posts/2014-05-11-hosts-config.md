@@ -34,12 +34,15 @@ tags:
 
 [smart hosts](https://github.com/smarthosts/smarthosts/blob/master/trunk/hosts),一个不错的域名与IP对应表项目。
 
-
 3、针对google的翻墙镜像
 
 * [针对google的翻墙镜像](https://github.com/greatfire/wiki)
 
 Google 搜索：http://www.aol.com
+
+Google 搜索：http://www.glgoo.com
+
+Google 搜索：http://www.tmd123.com
 
 Google 搜索：http://sinaapp.co
 
