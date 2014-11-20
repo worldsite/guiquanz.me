@@ -44,6 +44,10 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [Information Theory, Inference, and Learning Algorithms](http://www.inference.phy.cam.ac.uk/itprnn/book.pdf)
 * [Erlang In Anger](http://zhongwencool.gitbooks.io/erlang_in_anger/)
 
+* [The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines, Second edition](http://www.morganclaypool.com/doi/pdf/10.2200/S00516ED2V01Y201306CAC024)
+
+* [Reverse Engineering for Beginners](http://beginners.re/)
+
 
 ## 扩展阅读
 

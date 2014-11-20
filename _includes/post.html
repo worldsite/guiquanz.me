@@ -5,9 +5,12 @@
 	<small class="pull-right">{{ page.date | date:"%b %d, %Y" }}</small>
 </h1>
 
+<a  class="pull-right fa fa-github" href="{{ site.gitrepurl }}/{{ page.path }}">[在线编辑]</a>
+
 {{ content | toc_generate }}
 
 </article>
+
 <div>
 {% if page.tags %}
 <br/>

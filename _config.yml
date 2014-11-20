@@ -9,6 +9,7 @@ pygments:  true
 paginate:  3
 auto:      false
 noToc:     false
+gitrepurl: http://github.com/guiquanz/guiquanz.github.com/blob/master
 contentsLabel: 目录
 
 
