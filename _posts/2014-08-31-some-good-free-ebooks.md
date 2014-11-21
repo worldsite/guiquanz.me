@@ -48,6 +48,8 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 
 * [Reverse Engineering for Beginners](http://beginners.re/)
 
+* [Understanding The Linux Virtual Memory Manager](http://www.csn.ul.ie/~mel/docs/vm/guide/pdf/understand.pdf)
+* [Code Commentary On The Linux Virtual Memory Manager](http://www.csn.ul.ie/~mel/docs/vm/guide/pdf/code.pdf)
 
 ## 扩展阅读
 
