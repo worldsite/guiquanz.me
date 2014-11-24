@@ -11,13 +11,13 @@ tags:
 
 [![](/img/article/2013-04/21-01.jpg)](http://sourceware.org/systemtap/index.html)
 
-    [SystemTap](http://sourceware.org/systemtap/index.html) provides free software (GPL) infrastructure to simplify the gathering of information about the running Linux system. This assists diagnosis of a performance or functional problem. SystemTap eliminates the need for the developer to go through the tedious and disruptive instrument, recompile, install, and reboot sequence that may be otherwise required to collect data.
+[SystemTap](http://sourceware.org/systemtap/index.html)provides free software (GPL) infrastructure to simplify the gathering of information about the running Linux system. This assists diagnosis of a performance or functional problem. SystemTap eliminates the need for the developer to go through the tedious and disruptive instrument, recompile, install, and reboot sequence that may be otherwise required to collect data.
 
-    SystemTap provides a simple command line interface and scripting language for writing instrumentation for a live running kernel plus user-space applications. We are publishing samples, as well as enlarging the internal "tapset" script library to aid reuse and abstraction.
+SystemTap provides a simple command line interface and scripting language for writing instrumentation for a live running kernel plus user-space applications. We are publishing samples, as well as enlarging the internal "tapset" script library to aid reuse and abstraction.
 
-    Among other tracing/probing tools, SystemTap is the tool of choice for complex tasks that may require live analysis, programmable on-line response, and whole-system symbolic access. SystemTap can also handle simple tracing jobs.
+Among other tracing/probing tools, SystemTap is the tool of choice for complex tasks that may require live analysis, programmable on-line response, and whole-system symbolic access. SystemTap can also handle simple tracing jobs.
 
-    Current project members include Red Hat, IBM, Hitachi, and Oracle.
+Current project members include Red Hat, IBM, Hitachi, and Oracle.
 
 
 SystemTap的数据流图:
