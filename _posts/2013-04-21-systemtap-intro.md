@@ -11,13 +11,13 @@ tags:
 
 [![](/img/article/2013-04/21-01.jpg)](http://sourceware.org/systemtap/index.html)
 
-    [SystemTap](http://sourceware.org/systemtap/index.html) provides free software (GPL) infrastructure to simplify the gathering of information about the running Linux system. This assists diagnosis of a performance or functional problem. SystemTap eliminates the need for the developer to go through the tedious and disruptive instrument, recompile, install, and reboot sequence that may be otherwise required to collect data.
+[SystemTap](http://sourceware.org/systemtap/index.html) provides free software (GPL) infrastructure to simplify the gathering of information about the running Linux system. This assists diagnosis of a performance or functional problem. SystemTap eliminates the need for the developer to go through the tedious and disruptive instrument, recompile, install, and reboot sequence that may be otherwise required to collect data.
 
-    SystemTap provides a simple command line interface and scripting language for writing instrumentation for a live running kernel plus user-space applications. We are publishing samples, as well as enlarging the internal "tapset" script library to aid reuse and abstraction.
+SystemTap provides a simple command line interface and scripting language for writing instrumentation for a live running kernel plus user-space applications. We are publishing samples, as well as enlarging the internal "tapset" script library to aid reuse and abstraction.
 
-    Among other tracing/probing tools, SystemTap is the tool of choice for complex tasks that may require live analysis, programmable on-line response, and whole-system symbolic access. SystemTap can also handle simple tracing jobs.
+Among other tracing/probing tools, SystemTap is the tool of choice for complex tasks that may require live analysis, programmable on-line response, and whole-system symbolic access. SystemTap can also handle simple tracing jobs.
 
-    Current project members include Red Hat, IBM, Hitachi, and Oracle.
+Current project members include Red Hat, IBM, Hitachi, and Oracle.
 
 
 SystemTap的数据流图:
@@ -41,8 +41,12 @@ __以下操作针对 Fedora 平台__
 
 
 （2）安装依赖的内核包
+
+```text
+
      取系统的内核版本： `uname -r`
      安装内核包： 如我的是`3.8.4-102.fc17.x86_64`，需要安装以下的包：
+```
     kernel-3.8.4-102.fc17.x86_64
     kernel-devel-3.8.4-102.fc17.x86_64
     kernel-debuginfo-common-x86_64-3.8.4-102.fc17.x86_64
@@ -82,7 +86,9 @@ Pass 5: starting run.
 Pass 5: run completed in 10usr/30sys/620real ms.
 </pre>
 
-其中，`Pass 5:`开始的3行输出表明： SystemTap可以成功创建指令探测内核，运行内核，检测被探测的事件（例如，虚拟文件系统的`读`事件），然后执行一个合法的处理操作（打印`hello world`，然后退出）。
+其中，`Pass 5:`开始的3行输出表明：
+
+SystemTap可以成功创建指令探测内核，运行内核，检测被探测的事件（例如，虚拟文件系统的`读`事件），然后执行一个合法的处理操作（打印`hello world`，然后退出）。
 
 
 （2）编写一个c程序，然后进行探测
@@ -117,7 +123,8 @@ __编写stap脚本__: `./test程序main函数被调用时，打印一个提示�
 ![](/img/article/2013-04/21-03.gif)
 
 
-其实，SystemTap的工作原理还是很简单的： 解析stap文件，生成对应的c代码，然后将其编译为一个内核模块，并加载到内核中，当事件发生时执行相关的探测操作，输出侦探结果。这个流程，还可以分步执行的：
+其实，SystemTap的工作原理还是很简单的：
+解析stap文件，生成对应的c代码，然后将其编译为一个内核模块，并加载到内核中，当事件发生时执行相关的探测操作，输出侦探结果。这个流程，还可以分步执行的：
 
     Systemtap works by translating the script to C, running the system C compiler to create a kernel module
 from that. When the module is loaded, it activates all the probed events by hooking into the kernel. Then,
@@ -151,6 +158,7 @@ disconnected, and the module removed.
 
 __注意：因为stap执行时，需要访问内核空间，需要root权限。如果想让普通用户也有执行stap权限，可以将其加入`stapdev`或`stapuser`用户组__
 
+```shell
 
 [ruby@Sudoku python-in-action]$ sudo stap -F test.stp
 [sudo] password for ruby: 
@@ -160,6 +168,7 @@ To reconnect, type "staprun -A stap_8a7070bd8d437653873bd58f9caa162b_1331"
 
 [ruby@Sudoku python-in-action]$ sudo staprun -A stap_8a7070bd8d437653873bd58f9caa162b_1331
 hello world
+```
 
 
 ### 内建的探测点(部分）：
@@ -190,9 +199,9 @@ hello world
 * [Various SystemTap scripts for MySQL and Drizzle](http://github.com/posulliv/stap)
 * [SystemTap Wiki](http://sourceware.org/systemtap/wiki/HomePage)
 
-* [Brendan\'s blog:Flame Graphs](http://dtrace.org/blogs/brendan/2011/12/16/flame-graphs/)
-* [Brendan\'s blog: Off-CPU Performance Analysis](http://dtrace.org/blogs/brendan/2011/07/08/off-cpu-performance-analysis/)
-* [Brendan\'s blog: Using SystemTap](http://dtrace.org/blogs/brendan/2011/10/15/using-systemtap/)
+* [Brendan's blog:Flame Graphs](http://dtrace.org/blogs/brendan/2011/12/16/flame-graphs/)
+* [Brendan's blog: Off-CPU Performance Analysis](http://dtrace.org/blogs/brendan/2011/07/08/off-cpu-performance-analysis/)
+* [Brendan's blog: Using SystemTap](http://dtrace.org/blogs/brendan/2011/10/15/using-systemtap/)
 
 * [Linux下如何知道文件被那个进程写](http://rdc.taobao.com/blog/cs/?p=1758)
 * [A guide on how to install Systemtap on an Ubuntu system](http://sourceware.org/systemtap/wiki/SystemtapOnUbuntu)

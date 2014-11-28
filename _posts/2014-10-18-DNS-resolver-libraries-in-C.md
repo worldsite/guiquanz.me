@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C语言DNS请求分析库
+title: C语言DNS请求解析库
 date: 2014-10-18
 categories:
   - 技术
