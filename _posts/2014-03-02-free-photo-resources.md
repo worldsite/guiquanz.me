@@ -24,6 +24,7 @@ tags:
 
 ## 扩展阅读
 
+* [几个设计用大照片免费下载站](http://riku.wowubuntu.com/10-free-photo-download-site/)
 
 ## 祝大家玩的开心
 
