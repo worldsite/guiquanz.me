@@ -17,7 +17,6 @@ tags:
 
 可是，面对复杂的表达式时，你有过抓狂的时候吗？下面给你介绍一块实用工具RegExper，它可以帮你可视化正则表达式。
 
-另外[regulex](http://jex.im/regulex/)也是一个针对JavaScript的不错的同类工具。
 
 ## RegExper简介
 
@@ -28,6 +27,11 @@ RegExper，已在`github`上开源。项目地址为[https://github.com/javallon
 ![](/img/article/regexper/demo2.png)
 
 __**备注:**__ 目前regexper不支持分析结果（png等格式）的导出操作。以后应该会有改善。
+
+
+另外[regulex](http://jex.im/regulex/)也是一个针对JavaScript的不错的同类工具。
+
+![](/img/article/11/2014-11-28-02.png)
 
 
 ## 扩展阅读
