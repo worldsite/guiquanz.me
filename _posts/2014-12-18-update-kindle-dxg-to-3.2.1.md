@@ -16,7 +16,7 @@ tags:
 
 ## 升级过程
 
-本文将介绍，如何将Kindle DXG原有2.5.8系统越狱升级到__3.2.1__版本,同时进行汉化处理。这是我的操作实录，仅供参考。__越狱有风险，请慎重考虑，后果自负__
+本文将介绍，如何将Kindle DXG原有2.5.8系统越狱升级到__3.2.1__版本,同时进行汉化处理。这是我的操作实录，仅供参考。__越狱有风险，请慎重考虑，后果自负。__
 
 ### 准备工作
 
@@ -105,7 +105,7 @@ U T = !cd /mnt/us; tar zxvf fbKindle-bin.tar.gz; rm fbKindle-bin.tar.gz; echo 10
 
 ## Kindle DXG的源代码
 
-Kindle系列所有产品，使用的是嵌入式的Linux系统，而且代码是[开源](http://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=200203720)，如果你感兴趣，可以自己去研究代码。
+Kindle系列所有产品，使用的是嵌入式的Linux系统，而且代码是[开源的](http://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=200203720)，如果你感兴趣，可以自己去研究代码。
 
 
 ## 扩展阅读
