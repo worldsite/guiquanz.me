@@ -197,7 +197,13 @@ dot -Tpng finite_state_machine.gv -o finite_state_machine.png
 * [UML Diagrams Using Graphviz Dot](http://www.ffnn.nl/pages/articles/media/uml-diagrams-using-graphviz-dot.php)
 * [Drawing graphs with dot](http://www.graphviz.org/pdf/dotguide.pdf)
 * [staruml](http://staruml.io/)
-
+* [Family tree layout with Dot/GraphViz](http://stackoverflow.com/questions/2271704/family-tree-layout-with-dot-graphviz)
+* [Enforcing horizontal node ordering in a .dot tree](http://stackoverflow.com/questions/10902745/enforcing-horizontal-node-ordering-in-a-dot-tree)
+* [Generate a directory tree with dot](http://www.graphviz.org/content/generate-directory-tree-dot)
+* [Visualizing binary trees with Graphviz](http://eli.thegreenplace.net/2009/11/23/visualizing-binary-trees-with-graphviz)
+* [The Programmable Tree Drawing Engine](http://pythonhosted.org/ete2/tutorial/tutorial_drawing.html)
+* [Netsniff - Design and Implementation Concepts](http://caia.swin.edu.au/reports/050204A/CAIA-TR-050204A.pdf)
+* [Design and Implementation of Netdude, a Framework for Packet Trace Manipulation](http://netdude.sourceforge.net/doco/netdude-freenix2004/)
 
 ## 祝大家玩的开心
 
