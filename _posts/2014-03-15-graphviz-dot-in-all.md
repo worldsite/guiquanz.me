@@ -204,6 +204,7 @@ dot -Tpng finite_state_machine.gv -o finite_state_machine.png
 * [The Programmable Tree Drawing Engine](http://pythonhosted.org/ete2/tutorial/tutorial_drawing.html)
 * [Netsniff - Design and Implementation Concepts](http://caia.swin.edu.au/reports/050204A/CAIA-TR-050204A.pdf)
 * [Design and Implementation of Netdude, a Framework for Packet Trace Manipulation](http://netdude.sourceforge.net/doco/netdude-freenix2004/)
+* [Intermediate states of the B-Tree](http://ysangkok.github.io/js-clrs-btree/btree.html)
 
 ## 祝大家玩的开心
 
