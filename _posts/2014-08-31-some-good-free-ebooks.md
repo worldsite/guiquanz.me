@@ -51,8 +51,14 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [Understanding The Linux Virtual Memory Manager](http://www.csn.ul.ie/~mel/docs/vm/guide/pdf/understand.pdf)
 * [Code Commentary On The Linux Virtual Memory Manager](http://www.csn.ul.ie/~mel/docs/vm/guide/pdf/code.pdf)
 * [Distributed systems for fun and profit](http://book.mixu.net/distsys/abstractions.html)
+* [Deep Learning Tutorial Release 0.1](http://deeplearning.net/tutorial/deeplearning.pdf)
+* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
+* [Deep Learning](http://research.microsoft.com/pubs/209355/DeepLearning-NowPublishing-Vol7-SIG-039.pdf) by Microsoft Research
+
 
 ## 扩展阅读
+
+* [Deep learning Reading List](http://jmozah.github.io/links/)
 
 
 ## 祝大家玩的开心
