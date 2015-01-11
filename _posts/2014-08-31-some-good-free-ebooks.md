@@ -52,6 +52,7 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [Code Commentary On The Linux Virtual Memory Manager](http://www.csn.ul.ie/~mel/docs/vm/guide/pdf/code.pdf)
 * [Distributed systems for fun and profit](http://book.mixu.net/distsys/abstractions.html)
 * [Deep Learning Tutorial Release 0.1](http://deeplearning.net/tutorial/deeplearning.pdf)
+* [Machine Learning Cheat Sheet](http://www.datasciencecentral.com/profiles/blogs/elements-of-machine-learning)
 * [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
 * [Deep Learning](http://research.microsoft.com/pubs/209355/DeepLearning-NowPublishing-Vol7-SIG-039.pdf) by Microsoft Research
 
@@ -59,6 +60,10 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 ## 扩展阅读
 
 * [Deep learning Reading List](http://jmozah.github.io/links/)
+* [DIY Deep Learning for Vision - a Hands-On Tutorial with Caffe](http://tutorial.caffe.berkeleyvision.org/)
+* [word2vec - Tool for computing continuous distributed representations of words](https://code.google.com/p/word2vec/)
+* [GloVe - Global Vectors for Word Representation](http://nlp.stanford.edu/projects/glove/)
+* [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
 
 
 ## 祝大家玩的开心
