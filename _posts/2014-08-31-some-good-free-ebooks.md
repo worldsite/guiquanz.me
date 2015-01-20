@@ -55,6 +55,7 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [Machine Learning Cheat Sheet](http://www.datasciencecentral.com/profiles/blogs/elements-of-machine-learning)
 * [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
 * [Deep Learning](http://research.microsoft.com/pubs/209355/DeepLearning-NowPublishing-Vol7-SIG-039.pdf) by Microsoft Research
+* [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Fourth%20Printing.pdf)
 
 
 ## 扩展阅读
