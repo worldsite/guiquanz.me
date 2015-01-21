@@ -56,7 +56,7 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
 * [Deep Learning](http://research.microsoft.com/pubs/209355/DeepLearning-NowPublishing-Vol7-SIG-039.pdf) by Microsoft Research
 * [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Fourth%20Printing.pdf)
-
+* [The Art of Multiprocessor Programming, Revised Reprint](http://booksite.elsevier.com/9780123973375/)
 
 ## 扩展阅读
 
