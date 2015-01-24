@@ -57,6 +57,8 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [Deep Learning](http://research.microsoft.com/pubs/209355/DeepLearning-NowPublishing-Vol7-SIG-039.pdf) by Microsoft Research
 * [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Fourth%20Printing.pdf)
 * [The Art of Multiprocessor Programming, Revised Reprint](http://booksite.elsevier.com/9780123973375/)
+* [Architecture of a Database System](http://dblab.xmu.edu.cn/wp-content/uploads/old/files/fntdb07-architecture.pdf)
+
 
 ## 扩展阅读
 
