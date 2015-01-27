@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一些C/C++ Lock-Free库
+title: 几个不过的C/C++ Lock-Free库
 date: 2014-12-27
 categories:
   - 技术
@@ -15,12 +15,8 @@ tags:
 * [The Concurrency Kit](http://concurrencykit.org/index.html)
 * [liblfds, a portable, license-free, lock-free data structure library written in C](http://www.liblfds.org/)
 
+以上是一些C/C++无锁库，在此存照，以备不时之需。
 
-以上是我知道的一些C/C++无锁库，在此存照，以备不时之需。
-
-<!-- ![](img/CallsGraph-main.png)-->
-
-<a href="/img/CallsGraph-main.png" rel="lightbox"><img src="/img/CallsGraph-main.png" class="frameit" width="670px" height="400px"/></a>
 
 ## 扩展阅读
 
