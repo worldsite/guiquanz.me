@@ -41,15 +41,19 @@ $ src2kindle libngx
 
 ```
 
-BTW，准备对一些有趣的开源项目生成mobi电子书文件，在[codebooks4kindle](https://github.com/codebooks4kindle)上贡献给需要的人（也便于不爱折腾，不喜欢perl的小伙伴们），hacking……，根本停不下来啊。__记住：纸和笔，才是最好的工具。kindle只是一旁的屏，加油吧。__
+BTW，准备对一些有趣的开源项目生成mobi电子书文件，在[YewSauce](https://github.com/YewSauce)上贡献给需要的人（也便于不爱折腾，不喜欢perl的小伙伴们），hacking……，根本停不下来啊。__记住：纸和笔，才是最好的工具。kindle只是一旁的屏，加油吧。__
 
 
 另外，如果想要使用`Calibre`的 `ebook-convert`工具，通过编写`recipes`下载网页并生成mobi图书，可以参考[抓取网页内容生成Kindle电子书](http://blog.codinglabs.org/articles/convert-html-to-kindle-book.html)一文。
+
+Amazon也推出[Kindle Textbook Creator](https://kdp.amazon.com/how-to-publish-educational-content?ref_=GS)了，官方的工具，大家可以关注一下。
 
 
 ## 扩展阅读
 
 * [抓取网页内容生成Kindle电子书](http://blog.codinglabs.org/articles/convert-html-to-kindle-book.html)
+* [Amazon 推出个人图书制作工具 Kindle Textbook Creator，轻轻松松将所有的 PDF 变成 Mobi](http://www.36kr.com/p/219029.html)
+* [Kindle Textbook Creator](https://kdp.amazon.com/how-to-publish-educational-content?ref_=GS)
 
 ## 祝大家玩的开心
 
