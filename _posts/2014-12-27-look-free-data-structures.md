@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 几个不过的C/C++ Lock-Free库
+title: 几个不错的C/C++ Lock-Free库
 date: 2014-12-27
 categories:
   - 技术
