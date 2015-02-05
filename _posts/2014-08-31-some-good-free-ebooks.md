@@ -67,6 +67,7 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [word2vec - Tool for computing continuous distributed representations of words](https://code.google.com/p/word2vec/)
 * [GloVe - Global Vectors for Word Representation](http://nlp.stanford.edu/projects/glove/)
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
+* [free programming books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#professional-development)
 
 
 ## 祝大家玩的开心
