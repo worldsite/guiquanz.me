@@ -92,12 +92,16 @@ send "quit\r"
 expect eof
 </pre>
 
+另外，也可以使用[Polysh](http://guichaz.free.fr/polysh/) 进行批量操作，请参考[使用Polysh交互式的批量修改用户密码](http://mingxinglai.com/cn/2014/11/bulk-operation-in-linux)。还有[opsboy](https://github.com/openresty/opsboy)应该也可以做类似的操作。
+
 
 ## 扩展阅读
 
 * [http://en.wikipedia.org/wiki/Expect](http://en.wikipedia.org/wiki/Expect)
 * [Advanced Programming in Expect: A Bulletproof Interface](http://www.cotse.com/dlf/man/expect/bulletproof1.htm)
 * [Expect man page](http://linux.die.net/man/1/expect)
+* [使用Polysh交互式的批量修改用户密码](http://mingxinglai.com/cn/2014/11/bulk-operation-in-linux)
+* [Polysh is a tool to aggregate several remote shells into one](http://guichaz.free.fr/polysh/)
 
 
 ## 祝大家玩的开心
