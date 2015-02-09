@@ -59,6 +59,7 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [The Art of Multiprocessor Programming, Revised Reprint](http://booksite.elsevier.com/9780123973375/)
 * [Architecture of a Database System](http://dblab.xmu.edu.cn/wp-content/uploads/old/files/fntdb07-architecture.pdf)
 * [A First Encounter with Machine Learning](http://www.ics.uci.edu/~welling/teaching/ICS273Afall11/IntroMLBook.pdf)
+* [The Computer Science Handbook](http://www.thecshandbook.com/public_html/TheComputerScienceHandbook.pdf)
 
 
 ## 扩展阅读
