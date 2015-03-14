@@ -63,6 +63,11 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [Write-optimization in external memory data structures](http://join.adform.com//media/78442/3-leif-walsh-tokutek.pdf)
 * [The Implementation of Functional Programming Languages](http://research.microsoft.com/en-us/um/people/simonpj/papers/slpj-book-1987/slpj-book-1987.pdf)
 * [Software Architecture Patterns](http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf)
+* [Recommended books and sites](http://www.strchr.com/links)
+* [Software optimization resources](http://www.agner.org/optimize/)
+* [What Every Programmer Should Know About Floating-Point Arithmetic](http://floating-point-gui.de/)
+* [Appendix D - What Every Computer Scientist Should Know About Floating-Point Arithmetic](http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
+* [Numerical Recipes	Numerical Recipes: The Art of Scientific Computing, Third Edition in C++](http://www.nr.com)
 
 
 ## 扩展阅读
@@ -73,6 +78,7 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [GloVe - Global Vectors for Word Representation](http://nlp.stanford.edu/projects/glove/)
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
 * [free programming books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#professional-development)
+* [http://www.highscalability.com](http://highscalability.com)
 
 
 ## 祝大家玩的开心
