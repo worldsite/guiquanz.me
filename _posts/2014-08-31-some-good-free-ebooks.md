@@ -62,6 +62,7 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [The Computer Science Handbook](http://www.thecshandbook.com/public_html/TheComputerScienceHandbook.pdf)
 * [Write-optimization in external memory data structures](http://join.adform.com//media/78442/3-leif-walsh-tokutek.pdf)
 * [The Implementation of Functional Programming Languages](http://research.microsoft.com/en-us/um/people/simonpj/papers/slpj-book-1987/slpj-book-1987.pdf)
+* [Software Architecture Patterns](http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf)
 
 
 ## 扩展阅读
