@@ -32,6 +32,8 @@ tags:
 
 * [翻墙VPN哪个好,翻墙VPN哪家强?](http://pmvt.cn/develop/vpn.html)
 * [用不了 Google 的服务怎么办?](http://hutu.me/856)
+* [科技创业公司的效率工具箱](http://segmentfault.com/a/1190000002656795)
+* [Facebook 接下来的十年目标愿景](http://mp.weixin.qq.com/s?__biz=MzAxOTA0MTUyNQ==&mid=204938839&idx=1&sn=930734fe2bc0cf133ae824498d337087&scene=1&from=singlemessage&isappinstalled=0#rd)
 
 
 ## 祝大家玩的开心
