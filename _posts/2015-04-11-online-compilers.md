@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在线代码编译器
+title: 在线代码编译
 date: 2015-04-11
 categories:
   - 技术
