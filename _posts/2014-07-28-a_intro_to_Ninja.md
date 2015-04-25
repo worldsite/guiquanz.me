@@ -76,7 +76,7 @@ ninja subtools:
      clean  # 清除构建生成的文件
   commands  # 罗列重新构建制定目标所需的所有命令
       deps  # 显示存储在deps日志中的依赖关系
-     graph  # 为指定目标生成 graphviz dot 文件。如 ninja -t graph all |dot -Tpng -ograph.png
+     graph  # 为指定目标生成 graphviz dot 文件。如 ninja -t graph all |dot -Tpng -o graph.png
      query  # 显示一个路径的inputs/outputs
    targets  # 通过DAG中rule或depth罗列target
     compdb  # dump JSON兼容的数据库到标准输出
