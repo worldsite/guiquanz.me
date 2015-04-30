@@ -12,7 +12,7 @@ usage:
 	@echo "                                            "
 
 build:
-	@jekyll server --watch
+	@jekyll server --port 8099 --watch
 
 commit: clean 
 	git add .	
