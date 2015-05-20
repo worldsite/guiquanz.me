@@ -126,8 +126,7 @@ i@home> oerr ora 111
 和
 
 <pre class="prettyprint linenums">
-SQL> whow err;
-SP2-0042: unknown command "whow err" - rest of line ignored.
+
 SQL> show err;
 Errors for PROCEDURE GETSERVICESCPCODE:
 
