@@ -85,5 +85,53 @@ orcdb =
   )
 </pre>
 
+## 存储过程
+
+<pre class="prettyprint linenums">
+CREATE OR REPLACE PROCEDURE test IS
+ cn varchar2(20);
+ vid varchar2(16);
+ type c_cursor IS ref cursor;
+ c_t1 c_cursor;
+
+begin
+ open c_t1 for 'select serialno from temp2';
+
+ loop
+ 	fetch c_t1 into cn;
+ 	exit when c_t1%notfound;
+ 	vid :='0';
+ 	select dateandtime into vid from xxxx where ser=cn;
+ 	update temp2 set chargedate=vid where ser=cn ;
+ end loop;
+
+ close c_t1;
+ commit;
+ 
+end test;
+/
+</pre>
+
+## 查看执行错误
+
+<pre class="prettyprint linenums">
+i@home> oerr ora 111 
+00111, 00000, "invalid attribute %s"
+// *Cause: The specified attribute was not recognized.
+// *Action: Refer to the manual for the proper keyword to use to specify
+//          a dispatcher attribute.
+
+</pre>
+
+和
+
+<pre class="prettyprint linenums">
+
+SQL> show err;
+Errors for PROCEDURE GETSERVICESCPCODE:
+
+</pre>
+
+
 ## 祝大家玩的开心
 

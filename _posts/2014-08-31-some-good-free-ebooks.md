@@ -72,6 +72,8 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [The Log - What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 * [Aether - A Scalable Approach to Logging](http://infoscience.epfl.ch/record/149436/files/vldb10aether.pdf)
 * [Full text search in milliseconds with PostgreSQL](https://blog.lateral.io/2015/05/full-text-search-in-milliseconds-with-postgresql/)
+* [API Facade Pattern - A Simple Interface to a Complex System](http://book.huihoo.com/api-facade-pattern/api-facade-pattern-ebook-2012-06.pdf)
+* [Clustering - Machine Learning](http://emma.memect.com/t/dd1ec6fae81cd01de63238b531de110686ecf735fc2fc759001fa9df343b80a8/Clustering.pdf)
 
 
 ## 扩展阅读
