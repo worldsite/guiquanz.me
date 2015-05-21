@@ -47,6 +47,13 @@ SQL> start install.sql
 
 __如果没有指定文件的绝对路径。默认路径为当前操作目录。__
 
+## 在sqlplus中执行数据更新操作之后，需要执行commit命令才会实时提交数据
+
+<pre class="prettyprint linenums">
+i@home> sqlplus zhangsan/zhangsan@oracle_1
+SQL> update x_table set x='y';
+SQL> commit;
+</pre>
 
 ## 客户端环境变量配置
 

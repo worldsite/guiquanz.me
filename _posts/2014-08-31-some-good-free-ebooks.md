@@ -67,7 +67,11 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [Software optimization resources](http://www.agner.org/optimize/)
 * [What Every Programmer Should Know About Floating-Point Arithmetic](http://floating-point-gui.de/)
 * [Appendix D - What Every Computer Scientist Should Know About Floating-Point Arithmetic](http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
-* [Numerical Recipes	Numerical Recipes: The Art of Scientific Computing, Third Edition in C++](http://www.nr.com)
+* [Numerical Recipes - The Art of Scientific Computing, Third Edition in C++](http://www.nr.com)
+* [Thoughtworks - Technology Radar(技术雷达)](http://www.thoughtworks.com/radar?utm_campaign=technology-radar&utm_source=reddit)
+* [The Log - What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
+* [Aether - A Scalable Approach to Logging](http://infoscience.epfl.ch/record/149436/files/vldb10aether.pdf)
+* [Full text search in milliseconds with PostgreSQL](https://blog.lateral.io/2015/05/full-text-search-in-milliseconds-with-postgresql/)
 
 
 ## 扩展阅读
@@ -79,6 +83,7 @@ __其实，[http://greenteapress.com](http://greenteapress.com) 上有很多免�
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
 * [free programming books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#professional-development)
 * [http://www.highscalability.com](http://highscalability.com)
+* [How to Code in HTML5 and CSS3](http://howtocodeinhtml.com/)
 
 
 ## 祝大家玩的开心
