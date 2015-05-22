@@ -20,7 +20,7 @@ Error: Failure while executing: git pull -q origin refs/heads/master:refs/remote
 
 ```
 
-于是研究了一番。发现 brew 还是奇葩的，原来在 brew 在 `/usr/local` （可以通过执行 `brew --prefix` 命令查看具体路径）下维护了一个 `git` 代码库。用了 5+ 年 Fedora 系统，用的是 `yum` 没有这样的。不过，这样也好。 update 就成了，更新代码库了。在此目录执行 `git remote -v` 就可以查看代码库的上游地址了[https://github.com/Homebrew/homebrew.git](https://github.com/Homebrew/homebrew.git)。具体，如下：
+于是研究了一番。发现 brew 还是奇葩的，原来 brew 在 `/usr/local` （可以通过执行 `brew --prefix` 命令查看具体路径）下维护了一个 `git` 代码库。用了 5+ 年 Fedora 系统，用的是 `yum` 没有这样的。不过，这样也好。 update 就成了，更新代码库了。在此目录执行 `git remote -v` 就可以查看代码库的上游地址了[https://github.com/Homebrew/homebrew.git](https://github.com/Homebrew/homebrew.git)。具体，如下：
 
 ``` shell
 
