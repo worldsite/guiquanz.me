@@ -29,19 +29,21 @@ RegExper，已在`github`上开源。项目地址为[https://github.com/javallon
 __**备注:**__ 目前regexper不支持分析结果（png等格式）的导出操作。以后应该会有改善。
 
 
-另外[regulex](http://jex.im/regulex/)也是一个针对JavaScript的不错的同类工具。
+另外 [regulex](http://jex.im/regulex/) 也是一个针对JavaScript的不错的同类工具。
 
 ![](/img/article/11/2014-11-28-02.png)
 
 
+还有 [http://regexr.com/](http://regexr.com/) 也不错哦。
+
+
 ## 扩展阅读
 
-1. "perlre - Perl regular expressions" [http://perldoc.perl.org/perlre.html](http://perldoc.perl.org/perlre.html)
-
-2. "Implementing Regular Expressions" [http://swtch.com/~rsc/regexp](http://swtch.com/~rsc/regexp)
-
-3. The re1 project: [http://code.google.com/p/re1](http://code.google.com/p/re1)
-
-4. The re2 project: [http://code.google.com/p/re2](http://code.google.com/p/re2)
-
+* "perlre - Perl regular expressions" [http://perldoc.perl.org/perlre.html](http://perldoc.perl.org/perlre.html)
+* "Implementing Regular Expressions" [http://swtch.com/~rsc/regexp](http://swtch.com/~rsc/regexp)
+* The re1 project: [http://code.google.com/p/re1](http://code.google.com/p/re1)
+* The re2 project: [http://code.google.com/p/re2](http://code.google.com/p/re2)
+* [RegExper](http://www.regexper.com/)
+* [regulex](http://jex.im/regulex/)
+* [http://regexr.com/](http://regexr.com/)
 
