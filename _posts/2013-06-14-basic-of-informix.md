@@ -87,6 +87,20 @@ tags:
 * sqlldr userid=test/test control=t_register.ctl log=ctlog/test.log
 
 
+## Shell脚本中执行数据库操作
+
+<pre class="prettyprint linenums">
+dbaccess $DBNAME &lt;&lt;! &gt;&gt;$LOGFILE 2>&1
+
+unload to $SATA_RESULT_FILE delimiter '~'
+select '265','$TIMESTAMP','statid',statid,'month',statvalue1,'money',statvalue2  
+from statistic 
+where statid in (10101,10102,10103) and statvalue1=myday(today - 1);
+
+!
+</pre>
+
+
 ## 扩展阅读
 
 
