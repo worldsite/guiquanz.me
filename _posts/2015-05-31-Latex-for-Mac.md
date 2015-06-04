@@ -61,7 +61,8 @@ tags:
 
 * [使用 TeXstudio 编写 Latex (miktex)](http://blog.sina.com.cn/s/blog_4a238ec20101sl5n.html)
 * [XeTeX：解決 LaTeX 惱人的中文字型問題](http://www.hitripod.com/blog/2011/04/xetex-chinese-font-cjk-latex/)
-* [为 MacTeX 配置中文支持(TeXShop)](http://liam0205.me/2014/11/02/latex-mactex-chinese-support/)
+* [为 MacTeX 配置中文支持( TeXShop )](http://liam0205.me/2014/11/02/latex-mactex-chinese-support/)
+* [LaTeX 常用功能](http://blog.csdn.net/solstice/article/details/638)
 
 
 ## 祝大家玩的开心
