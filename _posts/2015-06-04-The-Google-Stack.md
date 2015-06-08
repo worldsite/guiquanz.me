@@ -8,7 +8,7 @@ tags:
   - google
   - stack
 ---
-## The Google Stack]
+## The Google Stack
 
 ![](/img/article/06/2015-06-04-the-google-stack.png)
 
