@@ -19,6 +19,8 @@ tags:
 
 * [http://githubrank.com](http://githubrank.com/)
 
+* [Tracking the Popularity of GitHub Applications](http://mtov.github.io/tracking-popularity-github/)
+
 * [https://porter.io](https://porter.io/): 每天邮件汇总一些好项目和新闻。
 
 ## 扩展阅读
