@@ -5,7 +5,7 @@ date: 2015-06-12
 categories:
   - 技术
 tags:
-  - 干货
+  - 技术
 ---
 ## Objective-C 基础
 
