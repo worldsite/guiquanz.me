@@ -11,7 +11,7 @@ tags:
 
 经过上次对[chromium](http://code.google.com/p/chromium)核心代码的初步了解之后，我转头去研究了一番[ninja](https://github.com/martine/ninja)，并对其[进行了一些改造](https://github.com/guiquanz/ninja)（爱折腾的，都是小NB）。今天就来简单介绍一下ninja及其使用。(BTW: 细节的内容，大家阅读[ninja 的手册](http://martine.github.io/ninja/manual.html)就好了，我这里不会关注。)
 
-[ninja](https://github.com/martine/ninja)是__一个专注于速度的__小型`构建系统`（Ninja is a small build system with a focus on speed）。ninja是其作者为了解决`chromium代码编译慢`这个问题（具体一点，就是发生在将Chrome移植到非Windows平台过程中的事情。欲知详情，请阅读[Ninja, a new build system](http://neugierig.org/software/chromium/notes/2011/02/ninja.html)）而诞生的。其设计受到[the tup build system](http://gittup.org/tup/)和[redo](https://github.com/apenwarr/redo)的启发。ninja核心是由C++编写的，同时有一部分辅助功能由`python`和`shell`实现。
+[ninja](https://github.com/martine/ninja)是__一个专注于速度的__小型`构建系统`（Ninja is a small build system with a focus on speed）。ninja是其作者为了解决`chromium代码编译慢`这个问题（具体一点，就是发生在将Chrome移植到非Windows平台过程中的事情。欲知详情，请阅读[Ninja, a new build system](http://neugierig.org/software/chromium/notes/2011/02/ninja.html)）而诞生的。其设计受到[the tup build system](http://gittup.org/tup/)和[redo](https://github.com/apenwarr/redo)的启发。ninja核心是由C/C++编写的，同时有一部分辅助功能由`python`和`shell`实现。
 
 ninja可以很好的组合[gyp](https://code.google.com/p/gyp)和[CMake](http://www.cmake.org/)一起使用，后者为其生成.ninja文件。
 
@@ -28,6 +28,7 @@ cd ninja
 python ./bootstrap.py
 ```
 （BTW：以上过程编译生成可执行文件ninja。需要预先安装 [graphviz](https://github.com/ellson/graphviz)及其开发库，[gtest](https://code.google.com/p/googletest)，[git](http://www.git-scm.com)、[re2c](http://re2c.org/)和[python](http://www.python.org)）
+
 
 ## 测试
 
@@ -356,7 +357,7 @@ build $spaced/baz other$ file: ...
 # The above build line has two outputs: "foo bar/baz" and "other file".
 ```
 
-在一个`name = value`语句中，value前的空白都会被去掉。出现跨行是，后续行起始的空白也会被去掉。
+在一个`name = value`语句中，value前的空白都会被去掉。出现跨行时，后续行起始的空白也会被去掉。
 
 ```ninja
 
@@ -366,7 +367,7 @@ one_word_with_no_space = foo$
     bar
 ```
 
-其他的空白，仅处于`行开始`处的很重要。__如果一行的缩进比前一行多，那么被人为是其父边界的一部分。如果缩进比前一行少，那他就关闭前一个边界__。
+其他的空白，仅位于`行开始`处的很重要。__如果一行的缩进比前一行多，那么被人为是其父边界的一部分。如果缩进比前一行少，那他就关闭前一个边界__。
 
 
 ### 顶层变量
