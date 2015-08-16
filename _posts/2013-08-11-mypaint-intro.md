@@ -14,6 +14,8 @@ tags:
 
 很不错哦，可以试一下：[http://mypaint.intilinux.com](http://mypaint.intilinux.com)
 
+[Open Source code](https://github.com/mypaint/mypaint/blob/master/README_OSX.md)
+
 
 ## 扩展阅读
 
