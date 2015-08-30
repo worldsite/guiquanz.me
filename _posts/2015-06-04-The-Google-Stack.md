@@ -12,6 +12,8 @@ tags:
 
 ![](/img/article/06/2015-06-04-the-google-stack.png)
 
+[![The Google Stack](/img/article/06/2015-06-04-the-google-stack.png)](/docs/08/google-stack.pdf)
+
 
 ## 扩展阅读
 
