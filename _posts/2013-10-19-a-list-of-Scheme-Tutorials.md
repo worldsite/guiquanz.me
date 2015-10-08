@@ -13,7 +13,7 @@ tags:
 * Scheme Tutorial：[http://www.cs.hut.fi/Studies/T-93.210/schemetutorial/schemetutorial.html](http://www.cs.hut.fi/Studies/T-93.210/schemetutorial/schemetutorial.html)
 
 * `TinyScheme`：[http://tinyscheme.sourceforge.net/download.html](http://tinyscheme.sourceforge.net/download.html)
-* Tiny Scheme documentation：[http://www.alphageeksinc.com/tinyscheme/documentation.html](http://www.alphageeksinc.com/tinyscheme/documentation.html)
+* Tiny Scheme documentation：[http://www.alphageeksinc.com/tinyscheme/documentation.html](http://www.alphageeksinc.com/tinyscheme/documentation.html) and [source code](http://sourceforge.net/p/tinyscheme/code/HEAD/tree/trunk/)
 * TinyScheme Extensions：[http://heras-gilsanz.com/manuel/tsx.html](http://heras-gilsanz.com/manuel/tsx.html)
 * TinyScheme with I/O Event Dispatcher and Network Extensions：[http://www.geonius.com/software/tsion/](http://www.geonius.com/software/tsion/)
 * `Tiny-Fu`：[http://www.ve3syb.ca/software/tiny-fu/index.html](http://www.ve3syb.ca/software/tiny-fu/index.html)
@@ -26,6 +26,9 @@ tags:
 * `程序设计技术和方法`：[http://www.math.pku.edu.cn/teachers/qiuzy/progtech/](http://www.math.pku.edu.cn/teachers/qiuzy/progtech/)
 * `"程序设计技术和方法"幻灯片的PDF文件`：[http://www.math.pku.edu.cn/teachers/qiuzy/progtech/slides/index.php](http://www.math.pku.edu.cn/teachers/qiuzy/progtech/slides/index.php)
 * Test Manager is a unit testing framework for Scheme：[http://web.mit.edu/~axch/www/test_manager.html](http://web.mit.edu/~axch/www/test_manager.html)
+* [《程序设计技术和方法》一书开源项目](https://github.com/sarabander/sicp-pdf)
+* [Essentials of Programming Languages 3rd Edition code](https://github.com/mwand/eopl3) and [author's homepage](http://www.ccs.neu.edu/home/wand/)
+* [Romeo: a System For More Flexible Binding-Safe Programming](https://repository.library.northeastern.edu/downloads/neu:344554?datastream_id=content)
 
 
 ## 扩展阅读
