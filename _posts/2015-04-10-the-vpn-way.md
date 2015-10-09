@@ -14,18 +14,19 @@ tags:
 作为技术人员，其实都不太关心政治，翻墙的目标很简单：下载学习资料，看看片而已。为了实现这个小小的梦想，VPN代理通道是必备的了。
 
 
-## 靠谱的VPN
+## 不靠谱的VPN
 
-* [红杏](http://honx.in/i/U6PcRYKo1wqT9dFP) ： 如果你只是冲浪，看电影，炒股……那`红杏`是那个绝好的选择。只需要安装一个Chrome插件即可。也因如此，你无法在手机上用，无法在非Chrome浏览器上用，无法下载非HTTP传输的资源……。这些需求，都只能通过安装VPN代理才能实现。如果你也想购买红杏的服务，请用我的邀请码哦[http://honx.in/i/U6PcRYKo1wqT9dFP](http://honx.in/i/U6PcRYKo1wqT9dFP)，送10天。
+* [lantern (大红`灯笼`高高挂)](https://github.com/getlantern/lantern-binaries)
+
+* [`红杏`出墙，不是春](http://honx.in/i/U6PcRYKo1wqT9dFP) (备注：已于 2015-10-01 前`阵亡`，欠我的钱也找不回了。 大宋的长城大炮真厉害)： 如果你只是冲浪，看电影，炒股……那`红杏`是那个绝好的选择。只需要安装一个Chrome插件即可。也因如此，你无法在手机上用，无法在非Chrome浏览器上用，无法下载非HTTP传输的资源……。这些需求，都只能通过安装VPN代理才能实现。如果你也想购买红杏的服务，请用我的邀请码哦[http://honx.in/i/U6PcRYKo1wqT9dFP](http://honx.in/i/U6PcRYKo1wqT9dFP)，送10天。
 
 * [云梯](https://www.superprivatedata.com/?r=2641c6e86591aef1)
 
-* [曲径](https://getqujing.com/?r=eeaac1e88f)
+* [曲径](https://getqujing.com/?r=eeaac1e88f)(备注： 已阵亡)
 
 * [GREEN网络加速](https://www.igreenjsq.info/vip.html)
 
-
-当然，如果你只想Google一下，那你可以使用[https://www.glgoo.com/](https://www.glgoo.com/) 和 [http://www.aol.com/](http://www.aol.com/)(对，就是`美国连线`。你懂的。)
+当然，如果你只想Google一下，那你可以使用[https://www.glgoo.com/](https://www.glgoo.com/) 和 [http://www.aolsearch.com/](http://www.aol.com/)(对，就是`美国连线`。你懂的。)
 
 
 ## 扩展阅读
