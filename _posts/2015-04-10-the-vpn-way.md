@@ -18,6 +18,8 @@ tags:
 
 * [lantern (大红`灯笼`高高挂)](https://github.com/getlantern/lantern-binaries)
 
+* [参差`多态`，乃幸福本源](https://duotai.org/)
+
 * [`红杏`出墙，不是春](http://honx.in/i/U6PcRYKo1wqT9dFP) (备注：已于 2015-10-01 前`阵亡`，欠我的钱也找不回了。 大宋的长城大炮真厉害)： 如果你只是冲浪，看电影，炒股……那`红杏`是那个绝好的选择。只需要安装一个Chrome插件即可。也因如此，你无法在手机上用，无法在非Chrome浏览器上用，无法下载非HTTP传输的资源……。这些需求，都只能通过安装VPN代理才能实现。如果你也想购买红杏的服务，请用我的邀请码哦[http://honx.in/i/U6PcRYKo1wqT9dFP](http://honx.in/i/U6PcRYKo1wqT9dFP)，送10天。
 
 * [云梯](https://www.superprivatedata.com/?r=2641c6e86591aef1)
