@@ -66,6 +66,8 @@ tags:
 * [为 MacTeX 配置中文支持( TeXShop )](http://liam0205.me/2014/11/02/latex-mactex-chinese-support/)
 * [LaTeX 常用功能](http://blog.csdn.net/solstice/article/details/638)
 * 知乎，[有哪些好的 LaTeX 编辑器？](http://www.zhihu.com/question/19954023/answer/71112878?utm_campaign=webshare&utm_source=weibo&utm_medium=zhihu)
+* [Making your first PDF with LaTeX and Sublime Text 2 for Mac](http://economistry.com/2013/01/installing-and-using-latex-for-mac/)
+* [sharelatex for chinese](https://www.sharelatex.com/learn/Chinese)
 
 
 ## 祝大家玩的开心
