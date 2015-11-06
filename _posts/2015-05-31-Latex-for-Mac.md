@@ -40,17 +40,19 @@ tags:
 如果你希望通过 LaTex 编辑出版自己的技术书，那么建议参考 陈硕 同学的 [typeset](https://github.com/chenshuo/typeset) 项目。他的[《Linux 多线程服务端编程：使用 muduo C++ 网络库》](http://book.douban.com/subject/20471211/)一书就是使用这个模板的，效果非常好。
 
 
-### 配置TeXstudio
+### 配置 TeXstudio
 
-* 启动 Texstudio，选择 Preferences-->Configure Texstudio-->Commands，XeLaTex 设置为 `/usr/bin/xelatex -synctex=1 -interaction=nonstopmode %.tex`；
+* 启动 Texstudio，选择 TeXstudio-->Preferences-->"Configure Texstudio"-->Commands，XeLaTex 设置为 `/usr/local/texlive/2014/bin/x86_64-darwin/xelatex -synctex=1 -interaction=nonstopmode %.tex`；（xelatex 的路径因安装方式的不同，可能会有差异）
 
-* 选择 Preferences-->Configure Texstudio-->Build， 然后：
+* 选择 Preferences-->"Configure Texstudio"-->Build， 然后：
 
 （1）、设置 Build & View 为 `Compile & View`；
 
 （2）、Default Compiler 由默认的 PdfLaTex 修改为 `XeLaTex`；
 
 （3）、PDF Viewer 改为 `Internal PDF Viewer(windowed)`，预览时会弹出一个独立的窗口，方便查阅。
+
+（4）、如果编译时，出现一些命令行工具找不到，那么可能你的 MacTex 安装路径和 TeXstudio 中的默认配置不一致。选择 TeXstudio-->Preferences-->"Configure Texstudio"-->Build，勾选 "Show Advanced options (左下角)", 然后在 "Additional Search Paths" 下面的 "Commands ($PATH)" 中填上你的 texlive 安装主目录（比如我的是`/usr/local/texlive/2014/bin/x86_64-darwin`
 
 * 用 git 克隆 `typeset` 库；
 
@@ -63,6 +65,7 @@ tags:
 * [XeTeX：解決 LaTeX 惱人的中文字型問題](http://www.hitripod.com/blog/2011/04/xetex-chinese-font-cjk-latex/)
 * [为 MacTeX 配置中文支持( TeXShop )](http://liam0205.me/2014/11/02/latex-mactex-chinese-support/)
 * [LaTeX 常用功能](http://blog.csdn.net/solstice/article/details/638)
+* 知乎，[有哪些好的 LaTeX 编辑器？](http://www.zhihu.com/question/19954023/answer/71112878?utm_campaign=webshare&utm_source=weibo&utm_medium=zhihu)
 
 
 ## 祝大家玩的开心
