@@ -67,6 +67,7 @@ tags:
 * [LaTeX 常用功能](http://blog.csdn.net/solstice/article/details/638)
 * 知乎，[有哪些好的 LaTeX 编辑器？](http://www.zhihu.com/question/19954023/answer/71112878?utm_campaign=webshare&utm_source=weibo&utm_medium=zhihu)
 * [Making your first PDF with LaTeX and Sublime Text 2 for Mac](http://economistry.com/2013/01/installing-and-using-latex-for-mac/)
+* [部署MAC上的Sublime Text+LaTex中文环境](http://www.readern.com/sublime-text-latex-chinese-under-mac.html)
 * [sharelatex for chinese](https://www.sharelatex.com/learn/Chinese)
 
 
