@@ -69,6 +69,8 @@ tags:
 * [Making your first PDF with LaTeX and Sublime Text 2 for Mac](http://economistry.com/2013/01/installing-and-using-latex-for-mac/)
 * [部署MAC上的Sublime Text+LaTex中文环境](http://www.readern.com/sublime-text-latex-chinese-under-mac.html)
 * [sharelatex for chinese](https://www.sharelatex.com/learn/Chinese)
+* [https://github.com/kemayo/sublime-text-git](https://github.com/kemayo/sublime-text-git)
+* [一本法文LaTeX入门书籍LaTeX源码](http://www.latexstudio.net/archives/4705)
 
 
 ## 祝大家玩的开心
