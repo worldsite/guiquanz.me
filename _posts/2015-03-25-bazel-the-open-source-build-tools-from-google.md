@@ -31,7 +31,7 @@ Google 还在官网上，针对 `Make`、`Ninja`、`Ant`、`Maven`、`Gradle`、
 
 ## 美中不足
 
-从[bazel](https://github.com/google/bazel/)开源项目说明来看，目前开源的是一个本地（local）编译的版本，也就是说没有集群脚步，不能用于大规模云编译。希望这一块，后续还会开源，否则竞争力就大打折扣了。
+从[bazel](https://github.com/google/bazel/)开源项目说明来看，目前开源的是一个本地（local）编译的版本，也就是说没有集群脚本，不能用于大规模云编译。希望这一块，后续还会开源，否则竞争力就大打折扣了。
 
 
 ## 扩展阅读
