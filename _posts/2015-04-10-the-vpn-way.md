@@ -28,7 +28,7 @@ tags:
 
 * [GREEN网络加速](https://www.igreenjsq.info/vip.html)
 
-当然，如果你只想Google一下，那你可以使用[https://www.glgoo.com/](https://www.glgoo.com/) 和 [http://www.aolsearch.com/](http://www.aol.com/)(对，就是`美国连线`。你懂的。)
+当然，如果你只想Google一下，那你可以使用[https://www.glgoo.com/](https://www.glgoo.com/) 和 [http://www.aolsearch.com/](http://www.aol.com/)(对，就是`美国连线`。你懂的。) 【这两个也被成功和谐了 - 2016-01-25 更新】
 
 
 ## 扩展阅读
