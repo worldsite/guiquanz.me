@@ -19,7 +19,7 @@ tags:
 ## 安装gitbook
 
 ```bash
-    $ sudo npm install gitbook -g
+    $ sudo npm install gitbook-cli -g
 ```
 
 ## 启动服务器
